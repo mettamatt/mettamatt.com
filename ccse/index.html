@@ -3,580 +3,530 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CCSEasy — CCSE Exam Prep for Spain Citizenship</title>
+    <title>CCSEasy — CCSE exam prep, in English</title>
     <meta
       name="description"
-      content="CCSEasy helps you prepare for Spain’s CCSE citizenship exam with quick quizzes, flashcards, and focused review sessions."
+      content="An English-first study companion for Spain's CCSE citizenship exam. Bilingual questions, plain-English explanations, mock exams, and spaced review — offline."
     />
 
-    <meta property="og:title" content="CCSEasy — CCSE Exam Prep for Spain Citizenship" />
+    <meta property="og:title" content="CCSEasy — CCSE exam prep, in English" />
     <meta
       property="og:description"
-      content="Study for the CCSE exam with quick quizzes, flashcards, and focused review."
+      content="Bilingual practice for Spain's CCSE citizenship exam, with plain-English explanations and a calm daily study habit."
     />
     <meta property="og:type" content="website" />
 
     <style>
       :root {
-        color-scheme: light dark;
-        --bg: #0b1220;
-        --surface: rgba(255, 255, 255, 0.06);
-        --text: rgba(255, 255, 255, 0.92);
-        --muted: rgba(255, 255, 255, 0.72);
-        --border: rgba(255, 255, 255, 0.12);
-        --accent: #7c3aed;
-        --accent2: #22c55e;
-        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-        --radius: 16px;
-        --max: 1080px;
-      }
-
-      @media (prefers-color-scheme: light) {
-        :root {
-          --bg: #f7f7fb;
-          --surface: rgba(255, 255, 255, 0.85);
-          --text: rgba(15, 23, 42, 0.92);
-          --muted: rgba(15, 23, 42, 0.68);
-          --border: rgba(15, 23, 42, 0.12);
-          --shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
-        }
+        color-scheme: light;
+        --paper: #f6f1e7;
+        --paper-rule: #e7dec9;
+        --ink: #1c1d1f;
+        --ink-soft: #4a4a4a;
+        --ink-mute: #6b6b6b;
+        --rojo: #ad1519;
+        --gualda: #c9a227;
+        --max: 880px;
+        --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Hoefler Text",
+          "Liberation Serif", Georgia, serif;
+        --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+          Arial, sans-serif;
       }
 
       html,
       body {
-        height: 100%;
+        background: var(--paper);
+        color: var(--ink);
       }
 
       body {
         margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
-          "Apple Color Emoji", "Segoe UI Emoji";
-        background:
-          radial-gradient(900px 500px at 15% 10%, rgba(124, 58, 237, 0.35), transparent 60%),
-          radial-gradient(900px 500px at 85% 15%, rgba(34, 197, 94, 0.18), transparent 60%),
-          radial-gradient(1000px 700px at 50% 100%, rgba(56, 189, 248, 0.18), transparent 60%),
-          var(--bg);
-        color: var(--text);
-        line-height: 1.5;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
+        font-family: var(--serif);
+        font-size: 18px;
+        line-height: 1.55;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
       }
 
       .wrap {
         max-width: var(--max);
         margin: 0 auto;
-        padding: 28px 18px 56px;
+        padding: 28px 22px 64px;
+      }
+
+      a {
+        color: var(--ink);
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      a:hover {
+        color: var(--rojo);
       }
 
       header {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-between;
         gap: 16px;
-        padding: 10px 0 24px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--paper-rule);
       }
 
       .brand {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-      }
-
-      .logo {
-        width: 42px;
-        height: 42px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, var(--accent), #38bdf8);
-        box-shadow: var(--shadow);
-      }
-
-      .brand h1 {
-        margin: 0;
-        font-size: 18px;
+        font-family: var(--serif);
+        font-weight: 700;
+        font-size: 20px;
         letter-spacing: 0.2px;
+      }
+
+      .brand .accent {
+        color: var(--rojo);
       }
 
       nav {
+        font-family: var(--sans);
+        font-size: 14px;
         display: flex;
-        gap: 14px;
-        flex-wrap: wrap;
-        justify-content: flex-end;
+        gap: 18px;
       }
 
       nav a {
-        color: var(--muted);
-        font-size: 14px;
+        text-decoration: none;
+        color: var(--ink-soft);
       }
 
-      nav a:focus,
-      .btn:focus {
-        outline: 2px solid color-mix(in srgb, var(--accent) 70%, white 30%);
-        outline-offset: 3px;
-        border-radius: 10px;
+      nav a:hover {
+        color: var(--rojo);
+        text-decoration: underline;
       }
 
       .hero {
-        display: grid;
-        grid-template-columns: 1.15fr 0.85fr;
-        gap: 18px;
-        align-items: start;
-        padding: 28px 0 10px;
-      }
-
-      @media (max-width: 860px) {
-        .hero {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      .card {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
-        backdrop-filter: blur(10px);
-      }
-
-      .heroCopy {
-        padding: 26px 22px;
+        padding: 36px 0 12px;
       }
 
       .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 6px 10px;
-        border-radius: 999px;
-        border: 1px solid var(--border);
-        color: var(--muted);
-        font-size: 13px;
+        font-family: var(--sans);
+        font-size: 12px;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+        margin-bottom: 14px;
       }
 
-      .dot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--accent2);
-        box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.12);
+      .eyebrow::before {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 2px;
+        background: var(--rojo);
+        vertical-align: middle;
+        margin-right: 10px;
+        transform: translateY(-3px);
       }
 
-      .hero h2 {
-        margin: 12px 0 10px;
-        font-size: clamp(28px, 3.6vw, 44px);
-        line-height: 1.1;
-        letter-spacing: -0.6px;
+      h1.title {
+        margin: 0 0 14px;
+        font-family: var(--serif);
+        font-weight: 700;
+        font-size: clamp(30px, 4.4vw, 44px);
+        line-height: 1.12;
+        letter-spacing: -0.01em;
       }
 
-      .hero p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 16px;
-        max-width: 62ch;
+      h1.title em {
+        font-style: italic;
+        color: var(--rojo);
+        font-weight: 700;
+      }
+
+      .lede {
+        margin: 0 0 22px;
+        max-width: 60ch;
+        color: var(--ink-soft);
+        font-size: 19px;
       }
 
       .ctaRow {
+        font-family: var(--sans);
         display: flex;
-        gap: 10px;
+        align-items: center;
+        gap: 18px;
         flex-wrap: wrap;
-        margin-top: 18px;
+        margin-top: 6px;
       }
 
       .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 11px 14px;
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        font-weight: 600;
+        display: inline-block;
+        padding: 11px 18px;
         font-size: 14px;
-        white-space: nowrap;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid var(--ink);
+        border-radius: 2px;
       }
 
       .btnPrimary {
-        background: linear-gradient(135deg, var(--accent), #38bdf8);
-        border: 0;
-        color: white;
+        background: var(--ink);
+        color: var(--paper);
       }
 
-      .btnSecondary {
-        color: var(--text);
+      .btnPrimary:hover {
+        background: var(--rojo);
+        border-color: var(--rojo);
+        color: var(--paper);
+      }
+
+      .btnGhost {
         background: transparent;
+        color: var(--ink);
       }
 
-      .smallNote {
-        margin-top: 12px;
-        font-size: 12px;
-        color: var(--muted);
+      .btnGhost:hover {
+        background: var(--ink);
+        color: var(--paper);
       }
 
-      .heroArt {
-        padding: 18px;
+      .sample {
+        margin: 40px 0 8px;
+        padding: 22px 24px 20px;
+        background: #fbf7ec;
+        border: 1px solid var(--paper-rule);
+        border-left: 3px solid var(--rojo);
+        border-radius: 2px;
       }
 
-      .device {
-        aspect-ratio: 9 / 19;
-        border-radius: 26px;
-        border: 1px solid var(--border);
-        overflow: hidden;
-        background:
-          linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 40%),
-          radial-gradient(550px 320px at 50% 25%, rgba(124, 58, 237, 0.35), transparent 60%),
-          radial-gradient(550px 320px at 50% 80%, rgba(34, 197, 94, 0.18), transparent 60%);
-        box-shadow: var(--shadow);
-        display: grid;
-        place-items: center;
+      .sample .label {
+        font-family: var(--sans);
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink-mute);
+        margin-bottom: 10px;
       }
 
-      .deviceInner {
-        width: 82%;
-        height: 72%;
-        border-radius: 18px;
-        border: 1px solid var(--border);
-        background: rgba(0, 0, 0, 0.12);
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        overflow: hidden;
+      .sample .q {
+        font-family: var(--serif);
+        font-size: 19px;
+        margin: 0 0 14px;
       }
 
-      @media (prefers-color-scheme: light) {
-        .deviceInner {
-          background: rgba(15, 23, 42, 0.06);
-        }
-      }
-
-      .mockTop {
-        padding: 14px 14px 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        border-bottom: 1px solid var(--border);
-      }
-
-      .pill {
-        height: 10px;
-        width: 60%;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.12);
-      }
-
-      @media (prefers-color-scheme: light) {
-        .pill {
-          background: rgba(15, 23, 42, 0.10);
-        }
-      }
-
-      .mockBody {
-        padding: 14px;
-        display: grid;
-        gap: 10px;
-      }
-
-      .row {
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 12px;
-        background: rgba(255, 255, 255, 0.06);
-      }
-
-      @media (prefers-color-scheme: light) {
-        .row {
-          background: rgba(15, 23, 42, 0.04);
-        }
-      }
-
-      .row strong {
+      .sample .q .es {
         display: block;
-        font-size: 13px;
-        letter-spacing: 0.2px;
-      }
-
-      .row span {
-        display: block;
-        color: var(--muted);
-        font-size: 12px;
+        color: var(--ink-mute);
+        font-style: italic;
+        font-size: 15px;
         margin-top: 4px;
       }
 
-      .mockBottom {
-        padding: 12px 14px;
-        border-top: 1px solid var(--border);
-        display: flex;
-        gap: 8px;
-        justify-content: space-between;
+      .sample ol {
+        margin: 0 0 12px;
+        padding: 0;
+        list-style: none;
+        font-family: var(--sans);
+        font-size: 15px;
       }
 
-      .tab {
-        height: 10px;
-        width: 18%;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.12);
+      .sample ol li {
+        padding: 7px 10px;
+        border: 1px solid var(--paper-rule);
+        border-radius: 2px;
+        margin-bottom: 6px;
+        background: #fefcf6;
       }
 
-      @media (prefers-color-scheme: light) {
-        .tab {
-          background: rgba(15, 23, 42, 0.10);
-        }
+      .sample ol li.correct {
+        border-color: #6b8e23;
+        background: #f1f5e6;
+      }
+
+      .sample ol li .mark {
+        color: #6b8e23;
+        font-weight: 700;
+        margin-left: 6px;
+      }
+
+      .sample .why {
+        font-family: var(--serif);
+        font-size: 15px;
+        color: var(--ink-soft);
+        margin: 12px 0 0;
+        padding-top: 12px;
+        border-top: 1px dashed var(--paper-rule);
+      }
+
+      .sample .why strong {
+        color: var(--ink);
       }
 
       .section {
-        margin-top: 18px;
-        padding: 22px;
+        margin-top: 56px;
       }
 
-      .section h3 {
-        margin: 0 0 12px;
-        font-size: 18px;
-        letter-spacing: -0.2px;
+      .section h2 {
+        font-family: var(--serif);
+        font-size: 22px;
+        font-weight: 700;
+        margin: 0 0 18px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--paper-rule);
       }
 
-      .grid3 {
+      .features {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
+        grid-template-columns: 1fr 1fr;
+        gap: 26px 36px;
       }
 
-      @media (max-width: 860px) {
-        .grid3 {
+      @media (max-width: 640px) {
+        .features {
           grid-template-columns: 1fr;
         }
       }
 
-      .feature {
-        padding: 14px;
-        border-radius: 14px;
-        border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.04);
-      }
-
-      @media (prefers-color-scheme: light) {
-        .feature {
-          background: rgba(15, 23, 42, 0.03);
-        }
-      }
-
-      .feature h4 {
+      .feature h3 {
+        font-family: var(--serif);
+        font-size: 17px;
         margin: 0 0 6px;
-        font-size: 14px;
+      }
+
+      .feature h3 .num {
+        color: var(--rojo);
+        font-family: var(--sans);
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        margin-right: 8px;
+        vertical-align: 2px;
       }
 
       .feature p {
         margin: 0;
-        color: var(--muted);
-        font-size: 13px;
+        color: var(--ink-soft);
+        font-size: 15.5px;
       }
 
-      .faq {
-        display: grid;
-        gap: 10px;
+      .faq details {
+        border-bottom: 1px solid var(--paper-rule);
+        padding: 14px 0;
       }
 
-      details {
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: 12px 14px;
-        background: rgba(255, 255, 255, 0.04);
+      .faq details:first-of-type {
+        border-top: 1px solid var(--paper-rule);
       }
 
-      @media (prefers-color-scheme: light) {
-        details {
-          background: rgba(15, 23, 42, 0.03);
-        }
-      }
-
-      summary {
+      .faq summary {
         cursor: pointer;
+        font-family: var(--serif);
         font-weight: 700;
-        font-size: 14px;
+        font-size: 16px;
+        list-style: none;
       }
 
-      details p {
-        margin: 8px 0 0;
-        color: var(--muted);
-        font-size: 13px;
+      .faq summary::-webkit-details-marker {
+        display: none;
       }
 
-      footer {
-        margin-top: 18px;
-        padding: 20px 8px 0;
-        color: var(--muted);
-        font-size: 13px;
+      .faq summary::before {
+        content: "§ ";
+        color: var(--rojo);
+        margin-right: 4px;
+      }
+
+      .faq details[open] summary::before {
+        content: "¶ ";
+      }
+
+      .faq details p {
+        margin: 10px 0 0;
+        color: var(--ink-soft);
+        font-size: 15.5px;
+      }
+
+      .colophon {
+        margin-top: 56px;
+        padding-top: 18px;
+        border-top: 1px solid var(--paper-rule);
+        font-family: var(--sans);
+        font-size: 12.5px;
+        color: var(--ink-mute);
         display: flex;
         justify-content: space-between;
-        gap: 12px;
+        gap: 16px;
         flex-wrap: wrap;
       }
 
-      footer a {
-        color: var(--muted);
+      .colophon a {
+        color: var(--ink-mute);
+        text-decoration: none;
       }
 
-      .legal {
-        max-width: 75ch;
+      .colophon a:hover {
+        color: var(--rojo);
+        text-decoration: underline;
+      }
+
+      .disclaimer {
+        max-width: 60ch;
       }
     </style>
   </head>
   <body>
     <div class="wrap">
       <header>
-        <div class="brand" aria-label="CCSEasy">
-          <div class="logo" aria-hidden="true"></div>
-          <h1>CCSEasy</h1>
-        </div>
+        <div class="brand">CCS<span class="accent">easy</span></div>
         <nav aria-label="Site">
-          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#features">What's inside</a>
           <a href="#faq">FAQ</a>
           <a href="privacy-policy.html">Privacy</a>
         </nav>
       </header>
 
       <main>
-        <section class="hero">
-          <div class="card heroCopy">
-            <div class="eyebrow">
-              <span class="dot" aria-hidden="true"></span>
-              Spain citizenship exam prep (CCSE)
-            </div>
-            <h2>Study for the CCSE exam with fast, focused practice.</h2>
-            <p>
-              CCSEasy helps you prepare for Spain’s CCSE citizenship exam (Conocimientos
-              Constitucionales y Socioculturales de España) with bite-sized quizzes, flashcards, and
-              targeted review—perfect for consistent daily study.
-            </p>
-            <div class="ctaRow" role="group" aria-label="Primary actions">
-              <a
-                class="btn btnPrimary js-appstore-link"
-                href="#"
-                aria-label="Download CCSEasy on the App Store (update link in ccse/index.html)"
-              >
-                Download on the App Store
-              </a>
-              <a class="btn btnSecondary" href="#features">See features</a>
-            </div>
-            <div class="smallNote">
-              Tip: update the App Store URL in <code>ccse/index.html</code>.
-            </div>
-          </div>
-
-          <div class="card heroArt" aria-label="App preview (illustration)">
-            <div class="device">
-              <div class="deviceInner" role="img" aria-label="Stylized CCSEasy screen mock">
-                <div class="mockTop">
-                  <div style="font-weight: 800; font-size: 12px">CCSEasy</div>
-                  <div class="pill" aria-hidden="true"></div>
-                </div>
-                <div class="mockBody">
-                  <div class="row">
-                    <strong>Quick Quiz</strong>
-                    <span>Short sessions to build recall</span>
-                  </div>
-                  <div class="row">
-                    <strong>Flashcards</strong>
-                    <span>Review concepts &amp; vocabulary</span>
-                  </div>
-                  <div class="row">
-                    <strong>Missed Items</strong>
-                    <span>Revisit weak spots efficiently</span>
-                  </div>
-                </div>
-                <div class="mockBottom" aria-hidden="true">
-                  <div class="tab"></div>
-                  <div class="tab"></div>
-                  <div class="tab"></div>
-                  <div class="tab"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="features" class="card section">
-          <h3>Features</h3>
-          <div class="grid3" role="list">
-            <div class="feature" role="listitem">
-              <h4>CCSE-focused practice</h4>
-              <p>Study the key topics commonly covered on the CCSE exam.</p>
-            </div>
-            <div class="feature" role="listitem">
-              <h4>Quizzes + flashcards</h4>
-              <p>Mix active recall (quizzes) with quick review (cards).</p>
-            </div>
-            <div class="feature" role="listitem">
-              <h4>Targeted review</h4>
-              <p>Spend more time on what you miss and less on what you know.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="faq" class="card section">
-          <h3>FAQ</h3>
-          <div class="faq">
-            <details>
-              <summary>Is CCSEasy official?</summary>
-              <p>
-                No. CCSEasy is an independent study tool and is not affiliated with or endorsed by
-                Instituto Cervantes or the Government of Spain.
-              </p>
-            </details>
-            <details>
-              <summary>What is the CCSE exam?</summary>
-              <p>
-                CCSE stands for <em>Conocimientos Constitucionales y Socioculturales de España</em>.
-                It’s a knowledge test used in the Spain nationality process.
-              </p>
-            </details>
-            <details>
-              <summary>Where can I read the privacy policy?</summary>
-              <p>
-                You can read it here:
-                <a href="privacy-policy.html">Privacy Policy</a>.
-              </p>
-            </details>
-          </div>
-        </section>
-
-        <section id="download" class="card section">
-          <h3>Download</h3>
-          <p style="margin: 0; color: var(--muted); font-size: 14px">
-            Add your App Store link by editing <code>ccse/index.html</code> and replacing the
-            button target below.
+        <section class="hero" id="about">
+          <div class="eyebrow">Spain · CCSE citizenship exam</div>
+          <h1 class="title">
+            Prepare for the CCSE <em>in plain English</em>, without losing the Spanish.
+          </h1>
+          <p class="lede">
+            CCSEasy is a quiet study companion for the
+            <i>Conocimientos Constitucionales y Socioculturales de España</i> — the
+            knowledge test required for Spanish nationality. Bilingual questions,
+            English explanations that actually teach the <i>why</i>, and a short daily
+            session that fits between the metro and your café.
           </p>
-          <div class="ctaRow" style="margin-top: 14px">
+          <div class="ctaRow">
             <a
               class="btn btnPrimary js-appstore-link"
               href="#"
-              aria-label="Download CCSEasy (update this link with your App Store URL)"
-            >
-              Download on the App Store
-            </a>
-            <a class="btn btnSecondary" href="privacy-policy.html">Privacy Policy</a>
+              aria-label="Download CCSEasy on the App Store"
+            >Download on the App Store</a>
+            <a class="btn btnGhost" href="#features">What's inside</a>
           </div>
+
+          <figure class="sample" aria-label="Sample question">
+            <div class="label">Sample question · Task 1</div>
+            <p class="q">
+              Who is the Head of State in Spain?
+              <span class="es">¿Quién es el Jefe del Estado en España?</span>
+            </p>
+            <ol>
+              <li>The President of the Government</li>
+              <li class="correct">The King<span class="mark">·  correct</span></li>
+              <li>The President of the Congress</li>
+            </ol>
+            <p class="why">
+              <strong>Why.</strong> Under the 1978 Constitution, Spain is a
+              parliamentary monarchy: the King is Head of State, while the
+              <i>Presidente del Gobierno</i> (often translated "Prime Minister") leads
+              the government. Easy to confuse with the English word "President."
+            </p>
+          </figure>
+        </section>
+
+        <section id="features" class="section">
+          <h2>What's inside</h2>
+          <div class="features">
+            <div class="feature">
+              <h3><span class="num">01</span>Bilingual practice</h3>
+              <p>
+                Every question in Spanish and English, side by side. Toggle as you
+                need; the Spanish never disappears.
+              </p>
+            </div>
+            <div class="feature">
+              <h3><span class="num">02</span>Explanations that teach</h3>
+              <p>
+                Short notes in plain English on the <i>why</i> — the Constitution, the
+                institutions, the geography, the customs.
+              </p>
+            </div>
+            <div class="feature">
+              <h3><span class="num">03</span>Mock exam, real format</h3>
+              <p>
+                25 questions, 45 minutes, the official task distribution (10·3·2·3·7).
+                Scored the way Instituto Cervantes scores it.
+              </p>
+            </div>
+            <div class="feature">
+              <h3><span class="num">04</span>Spaced review</h3>
+              <p>
+                Items you miss come back sooner; items you know stay out of the way.
+                A daily 10-minute habit, not a slog.
+              </p>
+            </div>
+            <div class="feature">
+              <h3><span class="num">05</span>Glossary at a tap</h3>
+              <p>
+                The official CCSE glossary, embedded. Tap any term —
+                <i>Cortes Generales</i>, <i>Defensor del Pueblo</i> — for a quick
+                English gloss.
+              </p>
+            </div>
+            <div class="feature">
+              <h3><span class="num">06</span>Offline &amp; quiet</h3>
+              <p>
+                No ads, no streaks-and-confetti. Works on a metro with zero signal.
+                Your progress stays on your device.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="section faq">
+          <h2>Questions</h2>
+          <details>
+            <summary>What is the CCSE, exactly?</summary>
+            <p>
+              The CCSE (<i>Conocimientos Constitucionales y Socioculturales de
+              España</i>) is a knowledge test from Instituto Cervantes, used in the
+              Spanish nationality application. 25 questions, 45 minutes, pass at
+              15 correct.
+            </p>
+          </details>
+          <details>
+            <summary>Is CCSEasy official?</summary>
+            <p>
+              No. CCSEasy is an independent study tool. It is not affiliated with,
+              endorsed by, or sponsored by Instituto Cervantes or the Government of
+              Spain. The official practice materials live on Instituto Cervantes' own
+              site.
+            </p>
+          </details>
+          <details>
+            <summary>Do I need Spanish to use it?</summary>
+            <p>
+              You'll need <i>some</i> Spanish for the exam itself — it is in Spanish.
+              CCSEasy is built for English-speaking residents who can read basic
+              Spanish but want explanations and translations to fill the gaps.
+            </p>
+          </details>
+          <details>
+            <summary>Does it work offline?</summary>
+            <p>
+              Yes. The question bank, glossary, and explanations are bundled with the
+              app. No account, no sign-in.
+            </p>
+          </details>
         </section>
       </main>
 
-      <footer>
-        <div class="legal">
-          © <span id="year"></span> CCSEasy. CCSEasy is not affiliated with, endorsed by, or
-          sponsored by Instituto Cervantes or the Government of Spain.
+      <footer class="colophon">
+        <div class="disclaimer">
+          © <span id="year"></span> CCSEasy. An independent study tool. Not
+          affiliated with Instituto Cervantes or the Government of Spain. All
+          official exam materials remain property of their respective owners.
         </div>
         <div>
-          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="privacy-policy.html">Privacy</a>
         </div>
       </footer>
     </div>
 
     <script>
       document.getElementById("year").textContent = String(new Date().getFullYear());
-      const APP_STORE_URL = "#"; // TODO: replace with your App Store URL (e.g., https://apps.apple.com/app/id123456789)
+      const APP_STORE_URL = "#"; // replace with App Store URL when live
       if (APP_STORE_URL && APP_STORE_URL !== "#") {
         for (const link of document.querySelectorAll("a.js-appstore-link")) {
           link.setAttribute("href", APP_STORE_URL);
