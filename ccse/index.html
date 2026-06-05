@@ -15,369 +15,34 @@
       content="Bilingual practice for Spain's CCSE citizenship exam, with plain-English explanations and a calm daily study habit."
     />
     <meta property="og:type" content="website" />
-
-    <style>
-      :root {
-        color-scheme: light;
-        --paper: #f6f1e7;
-        --paper-rule: #e7dec9;
-        --ink: #1c1d1f;
-        --ink-soft: #4a4a4a;
-        --ink-mute: #6b6b6b;
-        --rojo: #ad1519;
-        --gualda: #c9a227;
-        --max: 880px;
-        --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Hoefler Text",
-          "Liberation Serif", Georgia, serif;
-        --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-          Arial, sans-serif;
-      }
-
-      html,
-      body {
-        background: var(--paper);
-        color: var(--ink);
-      }
-
-      body {
-        margin: 0;
-        font-family: var(--serif);
-        font-size: 18px;
-        line-height: 1.55;
-        -webkit-font-smoothing: antialiased;
-        text-rendering: optimizeLegibility;
-      }
-
-      .wrap {
-        max-width: var(--max);
-        margin: 0 auto;
-        padding: 28px 22px 64px;
-      }
-
-      a {
-        color: var(--ink);
-        text-decoration: underline;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 3px;
-      }
-
-      a:hover {
-        color: var(--rojo);
-      }
-
-      header {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 16px;
-        padding-bottom: 14px;
-        border-bottom: 1px solid var(--paper-rule);
-      }
-
-      .brand {
-        font-family: var(--serif);
-        font-weight: 700;
-        font-size: 20px;
-        letter-spacing: 0.2px;
-      }
-
-      .brand .accent {
-        color: var(--rojo);
-      }
-
-      nav {
-        font-family: var(--sans);
-        font-size: 14px;
-        display: flex;
-        gap: 18px;
-      }
-
-      nav a {
-        text-decoration: none;
-        color: var(--ink-soft);
-      }
-
-      nav a:hover {
-        color: var(--rojo);
-        text-decoration: underline;
-      }
-
-      .hero {
-        padding: 36px 0 12px;
-      }
-
-      .eyebrow {
-        font-family: var(--sans);
-        font-size: 12px;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--ink-mute);
-        margin-bottom: 14px;
-      }
-
-      .eyebrow::before {
-        content: "";
-        display: inline-block;
-        width: 22px;
-        height: 2px;
-        background: var(--rojo);
-        vertical-align: middle;
-        margin-right: 10px;
-        transform: translateY(-3px);
-      }
-
-      h1.title {
-        margin: 0 0 14px;
-        font-family: var(--serif);
-        font-weight: 700;
-        font-size: clamp(30px, 4.4vw, 44px);
-        line-height: 1.12;
-        letter-spacing: -0.01em;
-      }
-
-      h1.title em {
-        font-style: italic;
-        color: var(--rojo);
-        font-weight: 700;
-      }
-
-      .lede {
-        margin: 0 0 22px;
-        max-width: 60ch;
-        color: var(--ink-soft);
-        font-size: 19px;
-      }
-
-      .ctaRow {
-        font-family: var(--sans);
-        display: flex;
-        align-items: center;
-        gap: 18px;
-        flex-wrap: wrap;
-        margin-top: 6px;
-      }
-
-      .btn {
-        display: inline-block;
-        padding: 11px 18px;
-        font-size: 14px;
-        font-weight: 600;
-        text-decoration: none;
-        border: 1px solid var(--ink);
-        border-radius: 2px;
-      }
-
-      .btnPrimary {
-        background: var(--ink);
-        color: var(--paper);
-      }
-
-      .btnPrimary:hover {
-        background: var(--rojo);
-        border-color: var(--rojo);
-        color: var(--paper);
-      }
-
-      .btnGhost {
-        background: transparent;
-        color: var(--ink);
-      }
-
-      .btnGhost:hover {
-        background: var(--ink);
-        color: var(--paper);
-      }
-
-      .sample {
-        margin: 40px 0 8px;
-        padding: 22px 24px 20px;
-        background: #fbf7ec;
-        border: 1px solid var(--paper-rule);
-        border-left: 3px solid var(--rojo);
-        border-radius: 2px;
-      }
-
-      .sample .label {
-        font-family: var(--sans);
-        font-size: 11px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--ink-mute);
-        margin-bottom: 10px;
-      }
-
-      .sample .q {
-        font-family: var(--serif);
-        font-size: 19px;
-        margin: 0 0 14px;
-      }
-
-      .sample .q .es {
-        display: block;
-        color: var(--ink-mute);
-        font-style: italic;
-        font-size: 15px;
-        margin-top: 4px;
-      }
-
-      .sample ol {
-        margin: 0 0 12px;
-        padding: 0;
-        list-style: none;
-        font-family: var(--sans);
-        font-size: 15px;
-      }
-
-      .sample ol li {
-        padding: 7px 10px;
-        border: 1px solid var(--paper-rule);
-        border-radius: 2px;
-        margin-bottom: 6px;
-        background: #fefcf6;
-      }
-
-      .sample ol li.correct {
-        border-color: #6b8e23;
-        background: #f1f5e6;
-      }
-
-      .sample ol li .mark {
-        color: #6b8e23;
-        font-weight: 700;
-        margin-left: 6px;
-      }
-
-      .sample .why {
-        font-family: var(--serif);
-        font-size: 15px;
-        color: var(--ink-soft);
-        margin: 12px 0 0;
-        padding-top: 12px;
-        border-top: 1px dashed var(--paper-rule);
-      }
-
-      .sample .why strong {
-        color: var(--ink);
-      }
-
-      .section {
-        margin-top: 56px;
-      }
-
-      .section h2 {
-        font-family: var(--serif);
-        font-size: 22px;
-        font-weight: 700;
-        margin: 0 0 18px;
-        padding-bottom: 8px;
-        border-bottom: 1px solid var(--paper-rule);
-      }
-
-      .features {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 26px 36px;
-      }
-
-      @media (max-width: 640px) {
-        .features {
-          grid-template-columns: 1fr;
-        }
-      }
-
-      .feature h3 {
-        font-family: var(--serif);
-        font-size: 17px;
-        margin: 0 0 6px;
-      }
-
-      .feature h3 .num {
-        color: var(--rojo);
-        font-family: var(--sans);
-        font-size: 12px;
-        letter-spacing: 0.16em;
-        margin-right: 8px;
-        vertical-align: 2px;
-      }
-
-      .feature p {
-        margin: 0;
-        color: var(--ink-soft);
-        font-size: 15.5px;
-      }
-
-      .faq details {
-        border-bottom: 1px solid var(--paper-rule);
-        padding: 14px 0;
-      }
-
-      .faq details:first-of-type {
-        border-top: 1px solid var(--paper-rule);
-      }
-
-      .faq summary {
-        cursor: pointer;
-        font-family: var(--serif);
-        font-weight: 700;
-        font-size: 16px;
-        list-style: none;
-      }
-
-      .faq summary::-webkit-details-marker {
-        display: none;
-      }
-
-      .faq summary::before {
-        content: "§ ";
-        color: var(--rojo);
-        margin-right: 4px;
-      }
-
-      .faq details[open] summary::before {
-        content: "¶ ";
-      }
-
-      .faq details p {
-        margin: 10px 0 0;
-        color: var(--ink-soft);
-        font-size: 15.5px;
-      }
-
-      .colophon {
-        margin-top: 56px;
-        padding-top: 18px;
-        border-top: 1px solid var(--paper-rule);
-        font-family: var(--sans);
-        font-size: 12.5px;
-        color: var(--ink-mute);
-        display: flex;
-        justify-content: space-between;
-        gap: 16px;
-        flex-wrap: wrap;
-      }
-
-      .colophon a {
-        color: var(--ink-mute);
-        text-decoration: none;
-      }
-
-      .colophon a:hover {
-        color: var(--rojo);
-        text-decoration: underline;
-      }
-
-      .disclaimer {
-        max-width: 60ch;
-      }
-    </style>
+    <meta property="og:url" content="https://mettamatt.com/ccse/" />
+    <meta property="og:image" content="https://mettamatt.com/ccse/assets/ccse-english-og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CCSE English app preview with bilingual CCSE study tools" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CCSE English — CCSE exam prep, in English" />
+    <meta
+      name="twitter:description"
+      content="Bilingual practice for Spain's CCSE citizenship exam, with plain-English explanations and offline review."
+    />
+    <meta name="twitter:image" content="https://mettamatt.com/ccse/assets/ccse-english-og.png" />
+    <link rel="canonical" href="https://mettamatt.com/ccse/" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/site.css" />
   </head>
   <body>
     <div class="wrap">
       <header>
-        <div class="brand">CCSE<span class="accent"> English</span></div>
+        <div class="brand">
+          <a href="index.html">CCSE<span class="accent"> English</span></a>
+        </div>
         <nav aria-label="Site">
           <a href="#about">About</a>
           <a href="#features">What's inside</a>
+          <a href="articles/">Articles</a>
           <a href="#faq">FAQ</a>
           <a href="privacy-policy.html">Privacy</a>
         </nav>
@@ -415,7 +80,7 @@
             </p>
             <ol>
               <li>The President of the Government</li>
-              <li class="correct">The King<span class="mark">·  correct</span></li>
+              <li class="correct">The King<span class="mark">· correct</span></li>
               <li>The President of the Congress</li>
             </ol>
             <p class="why">
@@ -431,48 +96,78 @@
           <h2>What's inside</h2>
           <div class="features">
             <div class="feature">
-              <h3><span class="num">01</span>Bilingual practice</h3>
+              <h3><span class="num" aria-hidden="true">01</span>Bilingual practice</h3>
               <p>
                 Every question in Spanish and English, side by side. Toggle as you
                 need; the Spanish never disappears.
               </p>
             </div>
             <div class="feature">
-              <h3><span class="num">02</span>Explanations that teach</h3>
+              <h3><span class="num" aria-hidden="true">02</span>Explanations that teach</h3>
               <p>
                 Short notes in plain English on the <i>why</i> — the Constitution, the
                 institutions, the geography, the customs.
               </p>
             </div>
             <div class="feature">
-              <h3><span class="num">03</span>Mock exam, real format</h3>
+              <h3><span class="num" aria-hidden="true">03</span>Mock exam, real format</h3>
               <p>
                 25 questions, 45 minutes, the official task distribution (10·3·2·3·7).
                 Scored the way Instituto Cervantes scores it.
               </p>
             </div>
             <div class="feature">
-              <h3><span class="num">04</span>Spaced review</h3>
+              <h3><span class="num" aria-hidden="true">04</span>Spaced review</h3>
               <p>
                 Items you miss come back sooner; items you know stay out of the way.
                 Reinforcement helps today, but advancement waits until you remember it later.
               </p>
             </div>
             <div class="feature">
-              <h3><span class="num">05</span>Readiness Index</h3>
+              <h3><span class="num" aria-hidden="true">05</span>Readiness Index</h3>
               <p>
                 A single number built from spaced recall — not just seeing an answer
                 twice in one session — plus a trend line so you can see when you're close.
               </p>
             </div>
             <div class="feature">
-              <h3><span class="num">06</span>Offline &amp; quiet</h3>
+              <h3><span class="num" aria-hidden="true">06</span>Offline &amp; quiet</h3>
               <p>
                 No ads, no streaks-and-confetti. Works on a metro with zero signal.
                 Your progress stays on your device.
               </p>
             </div>
           </div>
+        </section>
+
+        <section id="articles" class="section">
+          <h2>CCSE Guide for English Speakers</h2>
+          <p class="lede">
+            Clear articles for English-speaking residents in Spain: what the exam is,
+            how much Spanish you need, how it differs from DELE, and how to study
+            without only memorizing answers.
+          </p>
+          <div class="articleGrid">
+            <article class="articleCard">
+              <h3><span class="num" aria-hidden="true">01</span><a href="articles/what-is-the-ccse-exam.html">What Is the CCSE Exam?</a></h3>
+              <p>The core explainer for the Spanish citizenship knowledge test.</p>
+            </article>
+            <article class="articleCard">
+              <h3><span class="num" aria-hidden="true">02</span><a href="articles/how-many-questions-can-i-miss.html">How Many Questions Can I Miss?</a></h3>
+              <p>A quick guide to scoring, passing, and what to focus on.</p>
+            </article>
+            <article class="articleCard">
+              <h3><span class="num" aria-hidden="true">03</span><a href="articles/do-i-need-spanish-to-pass-the-ccse.html">Do I Need Spanish To Pass the CCSE?</a></h3>
+              <p>What English speakers should know before relying on translations.</p>
+            </article>
+            <article class="articleCard">
+              <h3><span class="num" aria-hidden="true">04</span><a href="articles/best-ccse-study-resources-for-english-speakers.html">Best CCSE Study Resources for English Speakers</a></h3>
+              <p>Official sources, practical study tools, and where CCSE English fits.</p>
+            </article>
+          </div>
+          <p>
+            <a href="articles/">Browse all CCSE articles</a>
+          </p>
         </section>
 
         <section id="faq" class="section faq">
@@ -530,6 +225,8 @@
           official exam materials remain property of their respective owners.
         </div>
         <div>
+          <a href="articles/">Articles</a>
+          ·
           <a href="privacy-policy.html">Privacy</a>
         </div>
       </footer>
