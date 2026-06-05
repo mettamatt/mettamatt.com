@@ -399,7 +399,9 @@
           <div class="ctaRow">
             <a
               class="btn btnPrimary js-appstore-link"
-              href="#"
+              href="https://apps.apple.com/es/app/ccse-english/id6768684045"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Download CCSE English on the App Store"
             >Download on the App Store</a>
             <a class="btn btnGhost" href="#features">What's inside</a>
@@ -453,15 +455,14 @@
               <h3><span class="num">04</span>Spaced review</h3>
               <p>
                 Items you miss come back sooner; items you know stay out of the way.
-                A daily 10-minute habit, not a slog.
+                Reinforcement helps today, but advancement waits until you remember it later.
               </p>
             </div>
             <div class="feature">
-              <h3><span class="num">05</span>Exam readiness score</h3>
+              <h3><span class="num">05</span>Readiness Index</h3>
               <p>
-                A single number — built from how well you actually remember each
-                question over time — plus a trend line so you can see when you're
-                close to passing.
+                A single number built from spaced recall — not just seeing an answer
+                twice in one session — plus a trend line so you can see when you're close.
               </p>
             </div>
             <div class="feature">
@@ -508,8 +509,8 @@
               The full question bank is free — every question, every answer, no
               gating. The free tier also includes two full English explanations
               per day. A one-time <strong>$4.99 lifetime unlock</strong> removes the
-              daily explanation limit and turns on the exam readiness score and
-              trend. No subscription.
+              daily explanation limit and turns on deeper readiness insights and
+              trend history. No subscription.
             </p>
           </details>
           <details>
@@ -536,7 +537,7 @@
 
     <script>
       document.getElementById("year").textContent = String(new Date().getFullYear());
-      const APP_STORE_URL = "#"; // replace with App Store URL when live
+      const APP_STORE_URL = "https://apps.apple.com/es/app/ccse-english/id6768684045";
       if (APP_STORE_URL && APP_STORE_URL !== "#") {
         for (const link of document.querySelectorAll("a.js-appstore-link")) {
           link.setAttribute("href", APP_STORE_URL);
