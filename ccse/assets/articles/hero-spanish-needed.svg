@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">Spanish and English study bridge</title>
+  <desc id="desc">English explanations bridge back to the Spanish wording used on exam day.</desc>
+  <rect width="880" height="360" rx="6" fill="#fbf7ec"/>
+  <rect x="18" y="18" width="844" height="324" rx="4" fill="none" stroke="#e7dec9" stroke-width="2"/>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="70" y="82" width="220" height="140" rx="4" fill="#fefcf6" stroke="#e7dec9"/>
+    <text x="94" y="122" font-size="18" font-weight="700" fill="#ad1519">English meaning</text>
+    <text x="94" y="158" font-size="16" fill="#4a4a4a">Head of State</text>
+    <text x="94" y="188" font-size="16" fill="#4a4a4a">Why the answer is true</text>
+    <path d="M310 152h220" stroke="#c9a227" stroke-width="8" stroke-linecap="round"/>
+    <path d="M510 132l34 20-34 20" fill="none" stroke="#c9a227" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="590" y="82" width="220" height="140" rx="4" fill="#fff4f2" stroke="#e7dec9"/>
+    <text x="614" y="122" font-size="18" font-weight="700" fill="#ad1519">Exam Spanish</text>
+    <text x="614" y="158" font-size="16" fill="#4a4a4a">Jefe del Estado</text>
+    <text x="614" y="188" font-size="16" fill="#4a4a4a">Question wording</text>
+    <text x="70" y="280" font-family="Iowan Old Style, Georgia, serif" font-size="29" font-weight="700" fill="#1c1d1f">Use English to understand.</text>
+    <text x="70" y="316" font-family="Iowan Old Style, Georgia, serif" font-size="29" font-weight="700" fill="#1c1d1f">Return to Spanish to pass.</text>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">Spanish citizenship timeline with CCSE</title>
+  <desc id="desc">A centered nationality timeline showing route confirmation, CCSE and DELE planning, certificates, documents, and submission.</desc>
+  <rect width="880" height="360" rx="6" fill="#fbf7ec"/>
+  <rect x="18" y="18" width="844" height="324" rx="4" fill="none" stroke="#e7dec9" stroke-width="2"/>
+  <text x="54" y="78" font-family="Iowan Old Style, Georgia, serif" font-size="33" font-weight="700" fill="#1c1d1f">CCSE is one step in a longer process</text>
+  <text x="54" y="110" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#4a4a4a">Plan exam certificates before document submission. Confirm legal details officially.</text>
+
+  <g transform="translate(74 164)" font-family="Helvetica, Arial, sans-serif">
+    <line x1="54" y1="42" x2="678" y2="42" stroke="#e7dec9" stroke-width="6" stroke-linecap="round"/>
+    <g text-anchor="middle">
+      <circle cx="54" cy="42" r="22" fill="#ad1519"/><text x="54" y="48" font-size="17" font-weight="700" fill="#fff">1</text>
+      <text x="54" y="92" font-size="14" font-weight="700" fill="#1c1d1f">Route</text>
+      <text x="54" y="114" font-size="12" fill="#6b6b6b">residence path</text>
+
+      <circle cx="210" cy="42" r="22" fill="#c9a227"/><text x="210" y="48" font-size="17" font-weight="700" fill="#1c1d1f">2</text>
+      <text x="210" y="92" font-size="14" font-weight="700" fill="#1c1d1f">Exams</text>
+      <text x="210" y="114" font-size="12" fill="#6b6b6b">CCSE / DELE</text>
+
+      <circle cx="366" cy="42" r="22" fill="#6b8e23"/><text x="366" y="48" font-size="17" font-weight="700" fill="#fff">3</text>
+      <text x="366" y="92" font-size="14" font-weight="700" fill="#1c1d1f">Certificates</text>
+      <text x="366" y="114" font-size="12" fill="#6b6b6b">keep valid dates</text>
+
+      <circle cx="522" cy="42" r="22" fill="#c9a227"/><text x="522" y="48" font-size="17" font-weight="700" fill="#1c1d1f">4</text>
+      <text x="522" y="92" font-size="14" font-weight="700" fill="#1c1d1f">Documents</text>
+      <text x="522" y="114" font-size="12" fill="#6b6b6b">upload file</text>
+
+      <circle cx="678" cy="42" r="22" fill="#ad1519"/><text x="678" y="48" font-size="17" font-weight="700" fill="#fff">5</text>
+      <text x="678" y="92" font-size="14" font-weight="700" fill="#1c1d1f">Submit</text>
+      <text x="678" y="114" font-size="12" fill="#6b6b6b">monitor status</text>
+    </g>
+  </g>
+</svg>

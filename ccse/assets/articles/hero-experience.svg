@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">A practical CCSE study loop</title>
+  <desc id="desc">A study loop that starts with official Spanish, uses English for meaning, and returns to Spanish-only practice.</desc>
+  <rect width="880" height="360" rx="6" fill="#fbf7ec"/>
+  <rect x="18" y="18" width="844" height="324" rx="4" fill="none" stroke="#e7dec9" stroke-width="2"/>
+  <text x="54" y="78" font-family="Iowan Old Style, Georgia, serif" font-size="33" font-weight="700" fill="#1c1d1f">The useful loop</text>
+  <text x="54" y="110" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#4a4a4a">English is the bridge. The destination is recognizing the Spanish.</text>
+
+  <g transform="translate(88 148)" font-family="Helvetica, Arial, sans-serif">
+    <rect width="160" height="104" rx="5" fill="#fefcf6" stroke="#e7dec9"/>
+    <text x="80" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#1c1d1f">Read Spanish</text>
+    <text x="80" y="68" text-anchor="middle" font-size="14" fill="#4a4a4a">official wording</text>
+
+    <path d="M186 52h70" stroke="#c9a227" stroke-width="5" stroke-linecap="round"/><path d="M244 37l26 15-26 15" fill="none" stroke="#c9a227" stroke-width="5" stroke-linejoin="round"/>
+
+    <rect x="288" width="160" height="104" rx="5" fill="#fff4f2" stroke="#e7dec9"/>
+    <text x="368" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#1c1d1f">Learn why</text>
+    <text x="368" y="68" text-anchor="middle" font-size="14" fill="#4a4a4a">English meaning</text>
+
+    <path d="M474 52h70" stroke="#c9a227" stroke-width="5" stroke-linecap="round"/><path d="M532 37l26 15-26 15" fill="none" stroke="#c9a227" stroke-width="5" stroke-linejoin="round"/>
+
+    <rect x="576" width="160" height="104" rx="5" fill="#f1f5e6" stroke="#6b8e23"/>
+    <text x="656" y="40" text-anchor="middle" font-size="17" font-weight="700" fill="#1c1d1f">Test recall</text>
+    <text x="656" y="68" text-anchor="middle" font-size="14" fill="#4a4a4a">Spanish-only</text>
+  </g>
+
+  <path d="M710 270c-102 54-344 54-470 0" fill="none" stroke="#e7dec9" stroke-width="5" stroke-linecap="round"/>
+  <path d="M249 252l-38 14 34 22" fill="none" stroke="#e7dec9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

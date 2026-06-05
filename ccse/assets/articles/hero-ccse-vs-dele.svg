@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">CCSE and DELE comparison</title>
+  <desc id="desc">Two side-by-side cards: CCSE is civic knowledge, DELE is language skill.</desc>
+  <rect width="880" height="360" rx="6" fill="#fbf7ec"/>
+  <rect x="18" y="18" width="844" height="324" rx="4" fill="none" stroke="#e7dec9" stroke-width="2"/>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="72" y="78" width="320" height="210" rx="5" fill="#fff4f2" stroke="#e7dec9"/>
+    <text x="104" y="128" font-family="Iowan Old Style, Georgia, serif" font-size="36" font-weight="700" fill="#ad1519">CCSE</text>
+    <text x="104" y="168" font-size="18" font-weight="700" fill="#1c1d1f">Knowledge about Spain</text>
+    <text x="104" y="204" font-size="16" fill="#4a4a4a">25 questions</text>
+    <text x="104" y="232" font-size="16" fill="#4a4a4a">Civics, culture, society</text>
+    <rect x="488" y="78" width="320" height="210" rx="5" fill="#fefcf6" stroke="#e7dec9"/>
+    <text x="520" y="128" font-family="Iowan Old Style, Georgia, serif" font-size="36" font-weight="700" fill="#c9a227">DELE</text>
+    <text x="520" y="168" font-size="18" font-weight="700" fill="#1c1d1f">Spanish language level</text>
+    <text x="520" y="204" font-size="16" fill="#4a4a4a">Reading, listening</text>
+    <text x="520" y="232" font-size="16" fill="#4a4a4a">Writing, speaking</text>
+    <path d="M428 120v120" stroke="#e7dec9" stroke-width="3"/>
+  </g>
+</svg>

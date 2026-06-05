@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">What makes the CCSE feel hard</title>
+  <desc id="desc">A comparison showing that the CCSE is manageable when facts are understood but harder when Spanish civic terms are unfamiliar.</desc>
+  <rect width="880" height="360" rx="6" fill="#fbf7ec"/>
+  <rect x="18" y="18" width="844" height="324" rx="4" fill="none" stroke="#e7dec9" stroke-width="2"/>
+  <text x="54" y="78" font-family="Iowan Old Style, Georgia, serif" font-size="33" font-weight="700" fill="#1c1d1f">It is not deep. It is specific.</text>
+  <text x="54" y="110" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#4a4a4a">The exam gets easier when Spanish civic vocabulary stops feeling unfamiliar.</text>
+
+  <g transform="translate(62 150)" font-family="Helvetica, Arial, sans-serif">
+    <rect width="344" height="132" rx="5" fill="#f1f5e6" stroke="#6b8e23"/>
+    <text x="28" y="38" font-size="18" font-weight="700" fill="#1c1d1f">What makes it manageable</text>
+    <circle cx="36" cy="70" r="5" fill="#6b8e23"/><text x="54" y="75" font-size="15" fill="#4a4a4a">25 questions, not a long paper</text>
+    <circle cx="36" cy="100" r="5" fill="#6b8e23"/><text x="54" y="105" font-size="15" fill="#4a4a4a">15 correct answers to pass</text>
+
+    <rect x="412" width="344" height="132" rx="5" fill="#fff4f2" stroke="#ad1519"/>
+    <text x="440" y="38" font-size="18" font-weight="700" fill="#1c1d1f">What makes it feel hard</text>
+    <circle cx="448" cy="70" r="5" fill="#ad1519"/><text x="466" y="75" font-size="15" fill="#4a4a4a">Official wording in Spanish</text>
+    <circle cx="448" cy="100" r="5" fill="#ad1519"/><text x="466" y="105" font-size="15" fill="#4a4a4a">Similar civic terms under time pressure</text>
+  </g>
+
+  <g transform="translate(142 310)" font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#4a4a4a">
+    <rect x="0" y="-22" width="140" height="28" rx="14" fill="#fefcf6" stroke="#e7dec9"/><text x="70" y="-3" text-anchor="middle">Congreso</text>
+    <rect x="176" y="-22" width="160" height="28" rx="14" fill="#fefcf6" stroke="#e7dec9"/><text x="256" y="-3" text-anchor="middle">derechos</text>
+    <rect x="372" y="-22" width="190" height="28" rx="14" fill="#fefcf6" stroke="#e7dec9"/><text x="467" y="-3" text-anchor="middle">ayuntamiento</text>
+  </g>
+</svg>

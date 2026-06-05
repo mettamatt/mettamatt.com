@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">What to do after a failed CCSE result</title>
+  <desc id="desc">A retake checklist showing result check, review option, second opportunity, and targeted practice.</desc>
+  <rect width="880" height="360" rx="6" fill="#fbf7ec"/>
+  <rect x="18" y="18" width="844" height="324" rx="4" fill="none" stroke="#e7dec9" stroke-width="2"/>
+  <text x="54" y="78" font-family="Iowan Old Style, Georgia, serif" font-size="33" font-weight="700" fill="#1c1d1f">After No apto: narrow the next step</text>
+  <text x="54" y="110" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#4a4a4a">Use the official portal first, then prepare the retake around weak areas.</text>
+
+  <g transform="translate(62 152)" font-family="Helvetica, Arial, sans-serif">
+    <rect width="168" height="112" rx="5" fill="#fefcf6" stroke="#e7dec9"/>
+    <text x="84" y="38" text-anchor="middle" font-size="17" font-weight="700" fill="#1c1d1f">1. Result</text>
+    <text x="84" y="66" text-anchor="middle" font-size="14" fill="#4a4a4a">Apto, No apto</text>
+    <text x="84" y="88" text-anchor="middle" font-size="14" fill="#4a4a4a">or No presentado</text>
+
+    <rect x="190" width="168" height="112" rx="5" fill="#fff4f2" stroke="#e7dec9"/>
+    <text x="274" y="38" text-anchor="middle" font-size="17" font-weight="700" fill="#1c1d1f">2. Review?</text>
+    <text x="274" y="66" text-anchor="middle" font-size="14" fill="#4a4a4a">Request only within</text>
+    <text x="274" y="88" text-anchor="middle" font-size="14" fill="#4a4a4a">the official window</text>
+
+    <rect x="380" width="168" height="112" rx="5" fill="#fefcf6" stroke="#c9a227"/>
+    <text x="464" y="38" text-anchor="middle" font-size="17" font-weight="700" fill="#1c1d1f">3. Second try</text>
+    <text x="464" y="66" text-anchor="middle" font-size="14" fill="#4a4a4a">Same center</text>
+    <text x="464" y="88" text-anchor="middle" font-size="14" fill="#4a4a4a">within 6 months</text>
+
+    <rect x="570" width="168" height="112" rx="5" fill="#f1f5e6" stroke="#6b8e23"/>
+    <text x="654" y="38" text-anchor="middle" font-size="17" font-weight="700" fill="#1c1d1f">4. Retake</text>
+    <text x="654" y="66" text-anchor="middle" font-size="14" fill="#4a4a4a">Weak topics</text>
+    <text x="654" y="88" text-anchor="middle" font-size="14" fill="#4a4a4a">Spanish mocks</text>
+  </g>
+</svg>

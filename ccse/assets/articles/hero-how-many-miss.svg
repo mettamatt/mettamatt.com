@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" role="img" aria-labelledby="title desc">
+  <title id="title">CCSE pass mark math</title>
+  <desc id="desc">A 25-dot score grid showing exactly 15 correct answers and 10 missed or blank answers.</desc>
+  <rect width="880" height="360" rx="6" fill="#fbf7ec"/>
+  <rect x="18" y="18" width="844" height="324" rx="4" fill="none" stroke="#e7dec9" stroke-width="2"/>
+  <text x="54" y="82" font-family="Iowan Old Style, Georgia, serif" font-size="34" font-weight="700" fill="#1c1d1f">15 correct passes</text>
+  <text x="54" y="116" font-family="Helvetica, Arial, sans-serif" font-size="17" fill="#4a4a4a">The pass line is 15 out of 25. That leaves room for 10 misses.</text>
+
+  <g transform="translate(62 170)" font-family="Helvetica, Arial, sans-serif">
+    <rect width="220" height="104" rx="5" fill="#f1f5e6" stroke="#6b8e23"/>
+    <text x="26" y="42" font-size="34" font-weight="700" fill="#1c1d1f">15</text>
+    <text x="82" y="35" font-size="16" font-weight="700" fill="#1c1d1f">correct</text>
+    <text x="82" y="62" font-size="15" fill="#4a4a4a">Apto starts here</text>
+    <rect x="244" width="220" height="104" rx="5" fill="#fff4f2" stroke="#ad1519"/>
+    <text x="270" y="42" font-size="34" font-weight="700" fill="#1c1d1f">10</text>
+    <text x="326" y="35" font-size="16" font-weight="700" fill="#1c1d1f">missed or blank</text>
+    <text x="326" y="62" font-size="15" fill="#4a4a4a">No extra penalty</text>
+  </g>
+
+  <g transform="translate(632 96)">
+    <rect x="-34" y="-28" width="212" height="208" rx="5" fill="#fefcf6" stroke="#e7dec9"/>
+    <g>
+      <circle cx="0" cy="0" r="11" fill="#6b8e23"/><circle cx="36" cy="0" r="11" fill="#6b8e23"/><circle cx="72" cy="0" r="11" fill="#6b8e23"/><circle cx="108" cy="0" r="11" fill="#6b8e23"/><circle cx="144" cy="0" r="11" fill="#6b8e23"/>
+      <circle cx="0" cy="38" r="11" fill="#6b8e23"/><circle cx="36" cy="38" r="11" fill="#6b8e23"/><circle cx="72" cy="38" r="11" fill="#6b8e23"/><circle cx="108" cy="38" r="11" fill="#6b8e23"/><circle cx="144" cy="38" r="11" fill="#6b8e23"/>
+      <circle cx="0" cy="76" r="11" fill="#6b8e23"/><circle cx="36" cy="76" r="11" fill="#6b8e23"/><circle cx="72" cy="76" r="11" fill="#6b8e23"/><circle cx="108" cy="76" r="11" fill="#6b8e23"/><circle cx="144" cy="76" r="11" fill="#6b8e23"/>
+      <circle cx="0" cy="114" r="11" fill="#ad1519"/><circle cx="36" cy="114" r="11" fill="#ad1519"/><circle cx="72" cy="114" r="11" fill="#ad1519"/><circle cx="108" cy="114" r="11" fill="#ad1519"/><circle cx="144" cy="114" r="11" fill="#ad1519"/>
+      <circle cx="0" cy="152" r="11" fill="#ad1519"/><circle cx="36" cy="152" r="11" fill="#ad1519"/><circle cx="72" cy="152" r="11" fill="#ad1519"/><circle cx="108" cy="152" r="11" fill="#ad1519"/><circle cx="144" cy="152" r="11" fill="#ad1519"/>
+    </g>
+  </g>
+</svg>
