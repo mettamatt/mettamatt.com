@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Retro Game Guides — Classic game guides, readable again.</title>
+<meta name="description" content="Retro Game Guides turns giant plain-text walkthroughs into a readable, searchable, offline iPhone library. Reflow old TXT guides, jump to the section you need, and keep everything organized by game." />
+<meta name="theme-color" content="#FAF6EE" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Retro Game Guides — Classic game guides, readable again." />
+<meta property="og:description" content="Reflow giant TXT walkthroughs into readable, searchable, offline reading on iPhone. Jump to the section you need and keep every guide organized by game." />
+<meta property="og:image" content="./assets/app-icon-1024.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" href="./assets/app-icon-180.png" />
+<link rel="apple-touch-icon" href="./assets/app-icon-180.png" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+	<div class="wrap nav">
+		<a class="nav-brand" href="#top" aria-label="Retro Game Guides home">
+			<img src="./assets/app-icon.svg" alt="" width="34" height="34" />
+			<span class="wordmark">Retro&nbsp;Game&nbsp;Guides</span>
+		</a>
+		<nav class="nav-links">
+			<a class="nav-link" href="#reader">Reader</a>
+			<a class="nav-link" href="#navigate">Jump &amp; Search</a>
+			<a class="nav-link" href="#library">Library</a>
+			<a class="nav-link" href="#pricing">Pricing</a>
+			<a class="nav-link" href="#faq">FAQ</a>
+			<a class="btn btn-primary nav-cta" href="#get">Get the app</a>
+		</nav>
+	</div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+	<div class="wrap hero-grid">
+		<div class="hero-copy">
+			<span class="eyebrow">Classic game guides, readable again</span>
+			<h1>Stop fighting old TXT walkthroughs on your <span class="hl">iPhone</span>.</h1>
+			<p class="hero-sub">
+				Retro Game Guides makes giant classic walkthroughs comfortable to read,
+				searchable, and ready offline, with every guide organized by game.
+			</p>
+			<div class="hero-cta" id="get">
+				<a class="badge-store" href="#get" aria-disabled="true">
+					<span style="font-size:22px">&#63743;</span>
+					<span><small>Coming soon to the</small><strong>App&nbsp;Store</strong></span>
+				</a>
+				<a class="btn btn-ghost" href="#reader">See how it reads</a>
+			</div>
+			<p class="hero-note">
+				<span>Reflow, wrap &amp; classic layouts</span><span class="dot"></span>
+				<span>Search &amp; jump</span><span class="dot"></span>
+				<span>Offline library</span>
+			</p>
+		</div>
+
+		<div class="hero-visual">
+			<!-- Reader -->
+			<div class="device device--shot device-tilt">
+				<div class="device-screen">
+					<img class="shot" src="./assets/screenshots/01-iphone-reader-walkthrough.png"
+						alt="Retro Game Guides reading a classic plain-text walkthrough on iPhone, with contents, reading settings, and search controls" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem">
+	<div class="wrap">
+		<div class="section-head center">
+			<span class="eyebrow">The problem</span>
+			<h2 class="title">Old walkthroughs were not made for phone screens.</h2>
+			<p>Classic TXT guides are huge, fixed-width, and packed with hand-made formatting.
+				Generic readers make you pinch, pan, search blindly, and lose your place.</p>
+		</div>
+		<div class="compare">
+			<div class="compare-card">
+				<div class="lab"><span class="tag tag-bad">Before</span> Raw TXT in a generic reader</div>
+<pre class="raw-txt compare-scroll" data-compare-pane="before" tabindex="0">==================================
+1. QUICK START
+==================================
+
+Starship Salvage is a compact
+space-adventure sample. Your goal
+is to recover three reactor cores
+from a drifting freighter before
+the oxygen timer expires.
+
+Start by checking the cargo deck.
+Pick up the repair kit, open the
+locker near the broken lift, and
+return to the center bay.
+
+CHAPTER 01:------------------------ Cargo Deck [C01]
+CHAPTER 02:------------------------ Crew Ring [C02]
+CHAPTER 03:------------------------ Engine Spine [C03]
+
+ ____________
+|Release Data\
+ ___________     ________________     _________________
+|  Country  | - |  Name of Game  | - |  Date Released  |
+ -----------     ----------------     -----------------
+ North           Starship Salvage      6/18/26
+ America
+
+ Europe          Starship Salvage      6/18/26
+ ______________________________________________________|
+
+=======================================================================
+2. CONTROLS
+=======================================================================
+
+D-Pad       Move
+A          Use tool / confirm
+B          Backstep / cancel
+Start      Open map
+Select     Toggle objective log</pre>
+			</div>
+			<div class="compare-card">
+				<div class="lab"><span class="tag tag-good">After</span> Reflowed in Retro Game Guides</div>
+<pre class="flow-txt compare-scroll" data-compare-pane="after" tabindex="0">--------
+1. QUICK START
+
+Starship Salvage is a compact space-adventure sample. Your goal is to recover three reactor cores from a drifting freighter before the oxygen timer expires.
+
+Start by checking the cargo deck. Pick up the repair kit, open the locker near the broken lift, and return to the center bay.
+
+CHAPTER 01: Cargo Deck [C01]
+CHAPTER 02: Crew Ring [C02]
+CHAPTER 03: Engine Spine [C03]
+
+Release Data
+Country | Name of Game | Date Released
+North America | Starship Salvage | 6/18/26
+Europe | Starship Salvage | 6/18/26
+
+--------
+2. CONTROLS
+
+D-Pad       Move
+A          Use tool / confirm
+B          Backstep / cancel
+Start      Open map
+Select     Toggle objective log</pre>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ READER ============ -->
+<section id="reader">
+	<div class="wrap">
+		<div class="feature-row">
+			<div class="feature-visual">
+				<!-- Reading settings sheet -->
+				<div class="device device--shot device-sm">
+					<div class="device-screen">
+						<img class="shot" src="./assets/screenshots/02-iphone-reader-settings.png"
+							alt="Reading Settings sheet with color theme, font size, proportional or monospace style, and No Wrap / Wrap / Reflow layout options" loading="lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="feature-copy">
+				<span class="eyebrow">Read the guide your way</span>
+				<h3>A reader built specifically for old TXT walkthroughs.</h3>
+				<p>Use reflow for long prose, wrap when you want a lighter touch, or classic
+					no-wrap when maps, tables, and spacing matter.</p>
+				<ul class="feature-list">
+					<li><span class="tick">&#10003;</span> Reflow, wrap, or classic no-wrap — switch any time</li>
+					<li><span class="tick">&#10003;</span> Adjust font size, text style, and reader theme</li>
+					<li><span class="tick">&#10003;</span> Keep the right layout for each guide</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ NAVIGATE / SEARCH ============ -->
+<section id="navigate" class="problem">
+	<div class="wrap">
+		<div class="feature-row reverse">
+			<div class="feature-visual feature-visual-pair">
+				<!-- Contents behind, search results in front -->
+				<div class="device device--shot device-sm device-back">
+					<div class="device-screen">
+						<img class="shot" src="./assets/screenshots/03-iphone-reader-contents.png"
+							alt="Contents sheet showing Recent Jumps, Your Sections, and a detected table of contents" loading="lazy" />
+					</div>
+				</div>
+				<div class="device device--shot device-sm device-front">
+					<div class="device-screen">
+						<img class="shot" src="./assets/screenshots/04-iphone-reader-search-results.png"
+							alt="In-guide search for 'sector' showing result snippets with line numbers" loading="lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="feature-copy">
+				<span class="eyebrow">Jump &amp; search</span>
+				<h3>Jump to the boss, item, puzzle, or chapter.</h3>
+				<p>Open contents built from the guide, save your own jump points, or search
+					inside the guide with snippets and line numbers.</p>
+				<ul class="feature-list">
+					<li><span class="tick">&#10003;</span> Contents built from guide headings</li>
+					<li><span class="tick">&#10003;</span> Custom sections for bosses, routes, and checklists</li>
+					<li><span class="tick">&#10003;</span> Search that handles old-guide spacing</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ LIBRARY ============ -->
+<section id="library">
+	<div class="wrap">
+		<div class="feature-row">
+			<div class="feature-visual feature-visual-pair">
+				<!-- Game detail behind, library in front -->
+				<div class="device device--shot device-sm device-back">
+					<div class="device-screen">
+						<img class="shot" src="./assets/screenshots/07-iphone-game-detail-saved-guides.png"
+							alt="Game detail for Starship Salvage showing saved guides and reading progress" loading="lazy" />
+					</div>
+				</div>
+				<div class="device device--shot device-sm device-front">
+					<div class="device-screen">
+						<img class="shot" src="./assets/screenshots/06-iphone-library-game-list.png"
+							alt="Library screen with All, Recent, and Favorites filters and a saved game" loading="lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="feature-copy">
+				<span class="eyebrow">Your offline library</span>
+				<h3>A real guide library, not a file pile.</h3>
+				<p>Keep multiple guides under each game, track reading progress, favorite the
+					important ones, filter by platform, and return to recent games — all stored
+					locally on your iPhone.</p>
+				<ul class="feature-list">
+					<li><span class="tick">&#10003;</span> Multiple walkthroughs, FAQs, maps, and notes under one game</li>
+					<li><span class="tick">&#10003;</span> Progress, favorites, recents, and platform filters built in</li>
+					<li><span class="tick">&#10003;</span> Fast library search across your whole collection</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ IMPORT + ONLINE SAVE (secondary) ============ -->
+<section class="problem">
+	<div class="wrap">
+		<div class="feature-row reverse">
+			<div class="feature-visual">
+				<div class="device device--shot device-sm">
+					<div class="device-screen">
+						<img class="shot" src="./assets/screenshots/11-iphone-folder-import-onboarding.png"
+							alt="Import TXT Folder screen explaining batch import from a parent folder of platform folders" loading="lazy" />
+					</div>
+				</div>
+			</div>
+			<div class="feature-copy">
+				<span class="eyebrow">Get your guides in</span>
+				<h3>Bring in your TXT guides without busywork.</h3>
+				<p>Import single guides from Files, preview a whole folder at once, or find a
+					supported guide online and save a clean offline copy.</p>
+				<ul class="feature-list">
+					<li><span class="tick">&#10003;</span> <b>Preview folder imports</b> before they touch your library</li>
+					<li><span class="tick">&#10003;</span> <b>Skip duplicates</b> so repeated files stay out of the way</li>
+					<li><span class="tick">&#10003;</span> <b>Find online, save offline</b> from supported guide pages</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="trust">
+	<div class="wrap">
+		<div class="section-head center">
+			<span class="eyebrow">Your guide library stays yours</span>
+			<h2 class="title">No account. No ads. No tracking.</h2>
+			<p>Saved and imported guides live on your iPhone for offline reading. Your library,
+				progress, favorites, and custom sections stay on-device.</p>
+		</div>
+		<div class="trust-grid">
+			<div class="trust-item">
+				<div class="ic">&#128241;</div>
+				<b>On your device</b>
+				<p>Your guide library stays on your iPhone — no cloud library, no sync ritual.</p>
+			</div>
+			<div class="trust-item">
+				<div class="ic">&#128274;</div>
+				<b>Nothing tracked</b>
+				<p>No account, no ads, no analytics, and no tracking.</p>
+			</div>
+			<div class="trust-item">
+				<div class="ic">&#128214;</div>
+				<b>Built for TXT files</b>
+				<p>Imports are careful with old plain-text guides and skip unsupported files.</p>
+			</div>
+			<div class="trust-item">
+				<div class="ic">&#10003;</div>
+				<b>Tested on real guides</b>
+				<p>The reader is tested against the weird formatting old walkthroughs actually use.</p>
+			</div>
+		</div>
+		<p style="text-align:center;margin-top:28px;font-size:13.5px;color:color-mix(in srgb, var(--rg-paper-50) 60%, transparent)">
+			Online guide saving, cover art, and purchases use the network when needed. Purchases go through the App Store.
+		</p>
+	</div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" class="pricing">
+	<div class="wrap">
+		<div class="section-head center">
+			<span class="eyebrow">Pricing</span>
+			<h2 class="title">Start free. Unlock when your library grows.</h2>
+			<p>Keep up to 3 games free. A one-time purchase unlocks unlimited games. No subscription. No ads.</p>
+		</div>
+		<div class="price-card">
+			<span class="crown">One-time unlock</span>
+			<div class="price-amount"><small>$</small>4.99</div>
+			<div class="once">Pay once. Yours to keep.</div>
+			<ul class="price-feats">
+				<li><span class="tick">&#10003;</span> Unlimited games in your library</li>
+				<li><span class="tick">&#10003;</span> Unlimited guides per game, always</li>
+				<li><span class="tick">&#10003;</span> Batch folder import for big collections</li>
+				<li><span class="tick">&#10003;</span> No subscription, no ads, no account</li>
+			</ul>
+			<div class="price-fine">Price shown in USD; the actual price varies by region. The free tier keeps up to 3 games with unlimited guides each.</div>
+		</div>
+	</div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+	<div class="wrap">
+		<div class="section-head center">
+			<span class="eyebrow">FAQ</span>
+			<h2 class="title">Questions before you import.</h2>
+		</div>
+		<div class="faq-list">
+			<details class="faq">
+				<summary>What file types can I import?</summary>
+				<p>Plain-text <code>.txt</code> walkthroughs, FAQs, and guides — the kind shared
+					for classic games. You can import a single file, several files at once, or
+					preview a whole folder. Unsupported archives and unusually large files are skipped.</p>
+			</details>
+			<details class="faq">
+				<summary>How does batch folder import match guides to games?</summary>
+				<p>Matching uses folder names and filenames, so clean names and platform folders
+					help. Before anything is imported, you'll see what matched, what needs review,
+					and any duplicates. You can add platform-folder hints and rescan.</p>
+			</details>
+			<details class="faq">
+				<summary>Does it work offline?</summary>
+				<p>Yes. Saved and imported guides, your library, search, and your reading progress
+					all work offline. Finding guides online, cover art, and purchases use the
+					network when needed.</p>
+			</details>
+			<details class="faq">
+				<summary>What does the free limit actually mean?</summary>
+				<p>The free tier keeps up to 3 games in your library. Each of those games can hold
+					as many guides as you like. The one-time unlock removes the game limit so you
+					can build a larger collection and use batch import freely.</p>
+			</details>
+			<details class="faq">
+				<summary>Can I save guides I find online?</summary>
+				<p>You can open supported online guide pages from within the app and save a clean
+					text snapshot for offline reading, with its source kept attached. It is a focused,
+					you-directed save flow for supported guide pages.</p>
+			</details>
+			<details class="faq">
+				<summary>Is my data private?</summary>
+				<p>There's no account, no ads, and no tracking. Your library, progress, favorites,
+					and custom sections stay on your device. Purchases are handled through the App
+					Store. Read the full <a href="./privacy-policy.html">Privacy Policy</a>.</p>
+			</details>
+			<details class="faq">
+				<summary>Is this affiliated with any guide website?</summary>
+				<p>No. Retro Game Guides is not affiliated with GameFAQs, GameSpot, Fandom, or any
+					guide-hosting website. Online guide pages load only when you choose to open
+					them, and saved guides are stored locally with attribution to their source.</p>
+			</details>
+		</div>
+	</div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+	<div class="wrap">
+		<div class="final-card">
+			<img class="icon" src="./assets/app-icon.svg" alt="Retro Game Guides app icon" width="88" height="88" />
+			<h2>Make your old walkthroughs usable again.</h2>
+			<p>Save your guides, search them fast, and keep them ready offline — organized by game on your iPhone.</p>
+			<div class="final-cta">
+				<a class="badge-store" href="#get" aria-disabled="true">
+					<span style="font-size:22px">&#63743;</span>
+					<span><small>Coming soon to the</small><strong>App&nbsp;Store</strong></span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+	<div class="wrap">
+		<div class="footer-top">
+			<div class="footer-brand">
+				<div class="nav-brand">
+					<img src="./assets/app-icon.svg" alt="" width="34" height="34" />
+					<span class="wordmark" style="font-size:26px;color:var(--rg-fg)">Retro&nbsp;Game&nbsp;Guides</span>
+				</div>
+				<p>Classic game guides, readable again. An offline reader and library for classic game
+					walkthroughs, built to make big plain-text guides easier to read on iPhone.</p>
+			</div>
+			<div class="footer-cols">
+				<div class="footer-col">
+					<h5>Product</h5>
+					<a href="#reader">Reader</a>
+					<a href="#navigate">Jump &amp; Search</a>
+					<a href="#library">Library</a>
+					<a href="#pricing">Pricing</a>
+				</div>
+				<div class="footer-col">
+					<h5>Support</h5>
+					<a href="#faq">FAQ</a>
+					<a href="./privacy-policy.html">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-legal">
+			<p>Not affiliated with GameFAQs, GameSpot, Fandom, or any guide-hosting website.
+				Game titles, cover art, and guide content are the property of their respective
+				owners. Saved guides are stored locally for personal offline reading, with
+				attribution to their source.</p>
+			<p>&copy; 2026 Retro Game Guides. Screenshots show sample content. App Store is a trademark of Apple Inc.</p>
+		</div>
+	</div>
+</footer>
+
+<script>
+(() => {
+	const panes = Array.from(document.querySelectorAll("[data-compare-pane]"));
+	let syncing = false;
+
+	for (const pane of panes) {
+		pane.addEventListener("scroll", () => {
+			if (syncing) return;
+			const maxTop = pane.scrollHeight - pane.clientHeight;
+			const maxLeft = pane.scrollWidth - pane.clientWidth;
+			const topRatio = maxTop > 0 ? pane.scrollTop / maxTop : 0;
+			const leftRatio = maxLeft > 0 ? pane.scrollLeft / maxLeft : 0;
+
+			syncing = true;
+			for (const other of panes) {
+				if (other === pane) continue;
+				other.scrollTop = topRatio * (other.scrollHeight - other.clientHeight);
+				other.scrollLeft = leftRatio * (other.scrollWidth - other.clientWidth);
+			}
+			requestAnimationFrame(() => { syncing = false; });
+		}, { passive: true });
+	}
+})();
+</script>
+</body>
+</html>
