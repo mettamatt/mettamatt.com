@@ -507,7 +507,7 @@ The core promise is: **make giant legacy TXT walkthroughs practical to use while
 * Suggested headline: Make your old walkthroughs usable again.
 * Suggested body copy: Save your guides, search them fast, and keep them ready offline.
 * Screenshot or visual needed: App icon plus App Store badge.
-* Primary proof points: App Store URL needed.
+* Primary proof points: App Store URL: https://apps.apple.com/us/app/retro-guides/id6771456010
 
 ### 11. Footer/Legal Links
 
@@ -651,7 +651,7 @@ Do not emphasize the app as a GameFAQs downloader, an AI contents generator, or 
 ## 13. Questions Before Building
 
 * What is the exact public app name: “Retro Game Guides,” “Retro Guides,” or something else? The name under the app icon will be “Retro Guides”
-* What is the App Store URL or launch-state CTA: download now, join TestFlight, coming soon, or notify me? It will be a placeholder for now. 
+* What is the App Store URL or launch-state CTA: download now, join TestFlight, coming soon, or notify me? Download now: https://apps.apple.com/us/app/retro-guides/id6771456010
 * What is the final public price, and should the website show the price or just say “one-time purchase”? $4.99 but the price will vary by region. 
 * Is the final approved privacy wording “no analytics,” “no tracking,” or “no ad/tracking analytics,” given RevenueCat is used for purchases? RevenueCat is used for payment not for tracking. 
 * What support/contact URL or email should the site link to? mavatar@gmail.com (that is in the code already)
