@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <style>
+    polygon { stroke: #2A251C; fill: none; }
+    .inner { fill: #2A251C; stroke: none; }
+    @media (prefers-color-scheme: dark) {
+      polygon { stroke: #F0E8D8; }
+      .inner { fill: #F0E8D8; }
+    }
+  </style>
+  <polygon points="24,4 41,14 41,34 24,44 7,34 7,14" stroke-width="3.4" />
+  <polygon class="inner" points="24,16 31.5,20.3 31.5,27.7 24,32 16.5,27.7 16.5,20.3" />
+</svg>

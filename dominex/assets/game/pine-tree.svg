@@ -1,0 +1,18 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="tree-halo" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1.5" result="halo-alpha"/>
+      <feFlood flood-color="#FBF8F1" flood-opacity="0.65" result="halo-color"/>
+      <feComposite in="halo-color" in2="halo-alpha" operator="in" result="halo"/>
+      <feMerge>
+        <feMergeNode in="halo"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#tree-halo)">
+    <rect x="28" y="44" width="8" height="14" rx="2" fill="#8B6F47" stroke="#000000" stroke-width="2"/>
+    <path d="M32 14 L48 46 L16 46 Z" fill="#4B8E49" stroke="#000000" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M32 6 L44 32 L20 32 Z" fill="#72A08A" stroke="#000000" stroke-width="2" stroke-linejoin="round"/>
+  </g>
+</svg>

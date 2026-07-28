@@ -1,0 +1,23 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Silhouette (single color) with door cut-out -->
+  <path
+    fill="currentColor"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="
+      M32 20 L50 36 L14 36 Z
+      M18 36
+      H46
+      V52
+      A2 2 0 0 1 44 54
+      H20
+      A2 2 0 0 1 18 52
+      V36
+      Z
+      M28 54
+      L28 45.5
+      C28 42.25 36 42.25 36 45.5
+      L36 54
+      Z"
+  />
+</svg>

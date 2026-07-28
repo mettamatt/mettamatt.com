@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dominex — Build your kingdom. Break theirs.</title>
+    <meta
+      name="description"
+      content="Dominex is a single-player hex strategy game with simple rules, demanding decisions, and a new map to conquer every day. Play against five AI rivals — no account required."
+    />
+    <meta property="og:title" content="Dominex — Build your kingdom. Break theirs." />
+    <meta
+      property="og:description"
+      content="A single-player hex strategy game with simple rules, demanding decisions, and a new map to conquer every day."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-image.png" />
+    <meta name="theme-color" content="#EFE9DC" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#221D15" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a class="brand" href="#top" aria-label="Dominex home">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <polygon points="24,4 41,14 41,34 24,44 7,34 7,14" fill="none" stroke="currentColor" stroke-width="3.4" />
+            <polygon points="24,16 31.5,20.3 31.5,27.7 24,32 16.5,27.7 16.5,20.3" fill="currentColor" />
+          </svg>
+          <span class="brand-name">Dominex</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="#how">How it plays</a>
+          <a href="#maps">Maps</a>
+          <a href="#premium">Premium</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <!-- TODO: point at the production game URL (or add a Vercel rewrite for /play). -->
+        <a class="btn btn-primary btn-sm" href="/play">Play now</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ============ Hero ============ -->
+      <section class="hero">
+        <svg class="hero-pattern" aria-hidden="true">
+          <defs>
+            <pattern id="hexes" width="56" height="97" patternUnits="userSpaceOnUse">
+              <polygon points="28,1 54,16 54,49 28,64 2,49 2,16" fill="none" stroke="currentColor" stroke-width="1.5" />
+              <polygon
+                points="0,49.5 26,64.5 26,97.5 0,112.5 -26,97.5 -26,64.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <polygon
+                points="56,49.5 82,64.5 82,97.5 56,112.5 30,97.5 30,64.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hexes)" />
+        </svg>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Single-player hex strategy</p>
+            <h1>Build your kingdom.<br />Break theirs.</h1>
+            <p class="lede">
+              Take command of a small kingdom and turn it into the last power standing. Capture land, join territories,
+              strengthen your army, and balance every expansion against its upkeep — on a fresh map every day.
+            </p>
+            <div class="cta-row">
+              <!-- TODO: point at the production game URL (or add a Vercel rewrite for /play). -->
+              <a class="btn btn-primary" href="/play">Play in your browser</a>
+              <a class="btn btn-ghost" href="#how">Learn the rules</a>
+            </div>
+            <ul class="hero-facts">
+              <li>Five AI rivals</li>
+              <li>Four difficulty levels</li>
+              <li>New maps daily</li>
+              <li>No account required</li>
+            </ul>
+          </div>
+          <div class="hero-shot">
+            <div class="device">
+              <img
+                src="assets/screenshot-map-hub.png"
+                width="506"
+                height="1100"
+                alt="The Dominex map hub on iPhone, showing today's daily maps and the core map collection"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ How it plays ============ -->
+      <section class="section" id="how">
+        <div class="container">
+          <p class="eyebrow">How it plays</p>
+          <h2>Every hex earns, defends, or opens the way forward</h2>
+          <p class="section-lede">
+            Six kingdoms enter. Only one controls the board. The rules fit on a card — the decisions do not.
+          </p>
+          <div class="steps">
+            <article class="step">
+              <span class="step-num">1</span>
+              <h3>Capture land</h3>
+              <p>
+                Every hex you take earns income each round. More land means more gold — until your borders stretch
+                further than your army can hold.
+              </p>
+            </article>
+            <article class="step">
+              <span class="step-num">2</span>
+              <h3>Join kingdoms</h3>
+              <p>
+                Connected territories share a treasury. Link them to combine their strength — but remember, a rich
+                kingdom can still fall at its weakest border.
+              </p>
+            </article>
+            <article class="step">
+              <span class="step-num">3</span>
+              <h3>Field your army</h3>
+              <p>
+                Combine villagers into spearmen, knights, and barons. Stronger units win more ground — and cost more to
+                keep. Castles and capitals hold the line while you press forward.
+              </p>
+            </article>
+            <article class="step">
+              <span class="step-num">4</span>
+              <h3>Outlast five rivals</h3>
+              <p>
+                Balance expansion against upkeep. Let a kingdom go broke and the land remembers: trees spread across
+                neglected ground, and graves stand where armies fell.
+              </p>
+            </article>
+          </div>
+
+          <div class="units-band">
+            <div class="units-row" role="img" aria-label="Unit progression: villager, spearman, knight, baron">
+              <figure class="unit">
+                <span class="piece" style="--piece: url(&quot;assets/game/peasant.svg&quot;)"></span>
+                <figcaption>Villager</figcaption>
+              </figure>
+              <span class="unit-arrow" aria-hidden="true">→</span>
+              <figure class="unit">
+                <span class="piece" style="--piece: url(&quot;assets/game/spearman.svg&quot;)"></span>
+                <figcaption>Spearman</figcaption>
+              </figure>
+              <span class="unit-arrow" aria-hidden="true">→</span>
+              <figure class="unit">
+                <span class="piece" style="--piece: url(&quot;assets/game/knight.svg&quot;)"></span>
+                <figcaption>Knight</figcaption>
+              </figure>
+              <span class="unit-arrow" aria-hidden="true">→</span>
+              <figure class="unit">
+                <span class="piece" style="--piece: url(&quot;assets/game/baron.svg&quot;)"></span>
+                <figcaption>Baron</figcaption>
+              </figure>
+              <span class="unit-divider" aria-hidden="true"></span>
+              <figure class="unit">
+                <span class="piece" style="--piece: url(&quot;assets/game/castle.svg&quot;)"></span>
+                <figcaption>Castle</figcaption>
+              </figure>
+              <figure class="unit">
+                <span class="piece" style="--piece: url(&quot;assets/game/capital.svg&quot;)"></span>
+                <figcaption>Capital</figcaption>
+              </figure>
+            </div>
+            <p class="units-note">
+              Win by eliminating every rival or controlling all land — and think it through first: undo and redo are
+              yours until you end the turn.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Maps ============ -->
+      <section class="section section-alt" id="maps">
+        <div class="container">
+          <p class="eyebrow">Maps</p>
+          <h2>A board that stays fresh</h2>
+          <p class="section-lede">
+            Distinct coastlines, chokepoints, chains, rifts, and canals — each shape asks for a different opening, and a
+            different kind of nerve.
+          </p>
+          <div class="map-cards">
+            <article class="map-card">
+              <span class="map-stat" style="--stat: var(--dx-p1-deep)">6</span>
+              <h3>Hand-crafted core maps</h3>
+              <p>Six curated battlefields, each with its own strategic shape and a plan to rethink.</p>
+            </article>
+            <article class="map-card">
+              <span class="map-stat" style="--stat: var(--dx-p3-deep)">6</span>
+              <h3>New map styles every day</h3>
+              <p>A fresh set of kingdoms rises daily, from compact clashes to sprawling canals and narrow crossings.</p>
+            </article>
+            <article class="map-card">
+              <span class="map-stat" style="--stat: var(--dx-p2-deep)">1</span>
+              <h3>Free daily map</h3>
+              <p>Your daily conquest is ready — come back for a new challenge without committing to Premium.</p>
+            </article>
+            <article class="map-card">
+              <span class="map-stat" style="--stat: var(--dx-p4-deep)">4</span>
+              <h3>Difficulties on every map</h3>
+              <p>Find your footing on Casual, then replay the same board and test your rule against Legend.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Designed around the player ============ -->
+      <section class="section" id="player">
+        <div class="container">
+          <p class="eyebrow">Designed around the player</p>
+          <h2>Strategy that fits into your day</h2>
+          <div class="features">
+            <article class="feature">
+              <h3>No waiting</h3>
+              <p>
+                No matchmaking, no turn timers, no coordinating schedules. Every map is a lively six-faction contest
+                that starts the moment you do.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Leave and return</h3>
+              <p>
+                Games save automatically on your device and resume in one tap. Step away when you need to — your kingdom
+                will be waiting.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Reconsider the move</h3>
+              <p>
+                Undo and redo freely during your turn. Recover from a mis-tap, explore an alternative, and commit when
+                you are ready.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Learn on the board</h3>
+              <p>
+                A guided first game teaches by doing, one decision at a time, and the full rules reference is always a
+                tap away.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Made for your hands</h3>
+              <p>
+                Touch-first controls with pan and pinch-to-zoom keep the full board comfortable on a phone or tablet.
+                Mouse and scroll support desktop play.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Take it offline</h3>
+              <p>
+                Install Dominex as a full-screen app and keep playing away from a connection once it has been installed
+                and cached.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Calm by design</h3>
+              <p>
+                A quiet ink-and-parchment interface with compact controls keeps attention on the board, and follows your
+                device between light and dark.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Readable for everyone</h3>
+              <p>
+                Player labels, shape-based cues, and a high-distinction palette mean ownership and legal moves never
+                depend on color alone. Haptic feedback lands quietly on supported iOS devices.
+              </p>
+            </article>
+            <article class="feature">
+              <h3>Yours, locally</h3>
+              <p>
+                No account setup required. Saved matches, favorites, preferences, and custom maps stay on your device.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Premium ============ -->
+      <section class="section section-alt" id="premium">
+        <div class="container">
+          <div class="premium-card">
+            <div class="premium-copy">
+              <p class="eyebrow eyebrow-premium">Dominex Premium</p>
+              <h2>One purchase, yours forever</h2>
+              <p class="section-lede">
+                Unlock the complete map library and the creation tools with a single lifetime purchase — no
+                subscription.
+              </p>
+              <ul class="premium-list">
+                <li>
+                  <strong>All six daily maps, every day.</strong> Choose the shape that suits your mood instead of
+                  waiting for tomorrow's free selection.
+                </li>
+                <li>
+                  <strong>An archive of played daily maps.</strong> A favorite board doesn't disappear at midnight —
+                  return to past campaigns and saved days.
+                </li>
+                <li>
+                  <strong>Unlimited favorites.</strong> Build a personal shelf of memorable core, daily, and custom
+                  maps.
+                </li>
+                <li>
+                  <strong>The map editor.</strong> Shape the coastline, set the chokepoints, and build the
+                  35&nbsp;×&nbsp;24 board you want to conquer — with validation, preview, undo, and redo while you work.
+                </li>
+                <li>
+                  <strong>Your maps, in play.</strong> Save custom maps and take them straight into the same six-way
+                  struggle.
+                </li>
+              </ul>
+              <p class="premium-note">Premium is unlocked with a one-time purchase in the iOS app.</p>
+            </div>
+            <div class="premium-art" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <polygon
+                  points="24,4 41,14 41,34 24,44 7,34 7,14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="3.4"
+                />
+                <polygon points="24,16 31.5,20.3 31.5,27.7 24,32 16.5,27.7 16.5,20.3" fill="currentColor" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section" id="faq">
+        <div class="container container-narrow">
+          <p class="eyebrow">Questions</p>
+          <h2>Frequently asked</h2>
+          <div class="faq-list">
+            <details>
+              <summary>Is Dominex multiplayer?</summary>
+              <p>
+                No — Dominex is single-player by design. You face five AI rivals across four difficulty levels, from
+                Casual to Legend, so every map is a full six-faction contest with no matchmaking and no waiting for
+                another turn.
+              </p>
+            </details>
+            <details>
+              <summary>Do I need an account?</summary>
+              <p>
+                No. Open the board and play. Saved matches, favorites, preferences, and custom maps are stored locally
+                on your device.
+              </p>
+            </details>
+            <details>
+              <summary>Can I play offline?</summary>
+              <p>
+                Yes, after installing. Add Dominex to your home screen as a full-screen web app; once it has been
+                installed and cached, you can play away from a connection.
+              </p>
+            </details>
+            <details>
+              <summary>What happens if I mis-tap?</summary>
+              <p>
+                Undo and redo are available throughout your turn, so you can recover a slip or explore a different line
+                before committing. Once you end the turn, the move stands.
+              </p>
+            </details>
+            <details>
+              <summary>How much does Premium cost?</summary>
+              <p>
+                Premium is a single lifetime purchase — no subscription. The current price is shown in the iOS app,
+                where the purchase is completed.
+              </p>
+            </details>
+            <details>
+              <summary>Can I make my own maps?</summary>
+              <p>
+                Yes, with Premium. The built-in editor lets you draw a 35&nbsp;×&nbsp;24 battlefield from scratch or
+                start from an existing map, with validation and preview as you work — then play your creation against
+                the same five rivals.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ Closing CTA ============ -->
+      <section class="section closing">
+        <div class="container closing-inner">
+          <h2>Your daily conquest is ready</h2>
+          <p class="section-lede">A new set of kingdoms rises every day. Six enter. One controls the board.</p>
+          <!-- TODO: point at the production game URL (or add a Vercel rewrite for /play). -->
+          <a class="btn btn-primary btn-lg" href="/play">Play Dominex</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div class="brand brand-footer">
+          <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+            <polygon points="24,4 41,14 41,34 24,44 7,34 7,14" fill="none" stroke="currentColor" stroke-width="3.4" />
+            <polygon points="24,16 31.5,20.3 31.5,27.7 24,32 16.5,27.7 16.5,20.3" fill="currentColor" />
+          </svg>
+          <span class="brand-name">Dominex</span>
+        </div>
+        <p class="footer-tag">A quiet strategy game about territory, timing, and economic pressure.</p>
+        <nav class="footer-links" aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+        </nav>
+        <p class="footer-fine">© 2026 Dominex</p>
+      </div>
+    </footer>
+  </body>
+</html>
