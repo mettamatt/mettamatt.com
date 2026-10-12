@@ -1,1 +1,344 @@
-Hello World
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Matt Westgate: Dominex, CCSE English, Retro Game Guides and Spanish Verb Master</title>
+    <meta
+      name="description"
+      content="Matt Westgate, Lullabot co-founder, makes small, focused apps: Dominex, a hex strategy game; CCSE English, Spanish citizenship exam prep; Retro Game Guides, an offline walkthrough reader for iPhone; and Spanish Verb Master, conjugation practice."
+    />
+    <link rel="canonical" href="https://mettamatt.com/" />
+    <meta name="author" content="Matt Westgate" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://mettamatt.com/" />
+    <meta property="og:title" content="Matt Westgate: apps and games I'm building" />
+    <meta
+      property="og:description"
+      content="Dominex, CCSE English, Retro Game Guides and Spanish Verb Master: four small, focused projects by Matt Westgate."
+    />
+    <meta property="og:image" content="https://mettamatt.com/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Matt Westgate with icons for Dominex, CCSE English, Retro Game Guides and Spanish Verb Master" />
+    <meta property="profile:first_name" content="Matt" />
+    <meta property="profile:last_name" content="Westgate" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171512" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://mettamatt.com/#matt",
+            "name": "Matt Westgate",
+            "url": "https://mettamatt.com/",
+            "jobTitle": "Independent app developer",
+            "description": "Programmer and co-founder of Lullabot. Co-author of Pro Drupal Development and author of Go Prompt Yourself!",
+            "homeLocation": { "@type": "Country", "name": "Spain" },
+            "sameAs": ["https://www.reddit.com/user/mettavestor/"]
+          },
+          {
+            "@type": "Organization",
+            "name": "Lullabot",
+            "url": "https://www.lullabot.com/",
+            "founder": { "@id": "https://mettamatt.com/#matt" }
+          },
+          {
+            "@type": "Book",
+            "name": "Go Prompt Yourself! The Definitive Guide to Metaprompting ChatGPT",
+            "isbn": "9798395889409",
+            "url": "https://www.amazon.com/dp/B0C6W5M32X",
+            "author": { "@id": "https://mettamatt.com/#matt" }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://mettamatt.com/#site",
+            "url": "https://mettamatt.com/",
+            "name": "Matt Westgate",
+            "author": { "@id": "https://mettamatt.com/#matt" }
+          },
+          {
+            "@type": "ItemList",
+            "name": "Projects by Matt Westgate",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": ["VideoGame", "SoftwareApplication"],
+                  "name": "Dominex",
+                  "url": "https://playdominex.com/",
+                  "description": "A single-player hex strategy game where every hex earns money and every soldier costs it. Inspired by the classic Slay.",
+                  "genre": "Turn-based strategy",
+                  "applicationCategory": "GameApplication",
+                  "operatingSystem": "Web, iOS, iPadOS",
+                  "image": "https://mettamatt.com/assets/icons/dominex.png",
+                  "author": { "@id": "https://mettamatt.com/#matt" },
+                  "sameAs": ["https://app.playdominex.com/", "https://apps.apple.com/app/dominex/id6778509055"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "CCSE English",
+                  "url": "https://ccseenglish.com/",
+                  "description": "Prepare for Spain's CCSE citizenship knowledge exam with clear English explanations, spaced repetition and realistic Spanish mock exams.",
+                  "applicationCategory": "EducationalApplication",
+                  "operatingSystem": "iOS",
+                  "image": "https://mettamatt.com/assets/icons/ccse-english.png",
+                  "author": { "@id": "https://mettamatt.com/#matt" },
+                  "sameAs": ["https://apps.apple.com/app/ccse-english/id6768684045"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "SoftwareApplication",
+                  "name": "Retro Game Guides",
+                  "url": "https://retrogameguides.net/",
+                  "description": "A clean, searchable, offline library for classic game walkthroughs on iPhone, with bookmarks and saved progress.",
+                  "applicationCategory": "UtilitiesApplication",
+                  "operatingSystem": "iOS",
+                  "image": "https://mettamatt.com/assets/icons/retro-game-guides.png",
+                  "author": { "@id": "https://mettamatt.com/#matt" },
+                  "sameAs": ["https://apps.apple.com/app/id6771456010"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "WebApplication",
+                  "name": "Spanish Verb Master",
+                  "url": "https://www.spanishverbmaster.com/",
+                  "description": "Spanish conjugation practice with spaced repetition and instant, letter-by-letter feedback.",
+                  "applicationCategory": "EducationalApplication",
+                  "operatingSystem": "Web",
+                  "image": "https://mettamatt.com/assets/icons/spanish-verb-master.png",
+                  "author": { "@id": "https://mettamatt.com/#matt" }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#projects">Skip to projects</a>
+
+    <header class="intro wrap">
+      <p class="kicker">Programmer · Lullabot co-founder · Living in Spain</p>
+      <h1>Matt Westgate</h1>
+      <p class="lede">
+        I make small, focused apps: a hex strategy game, two tools for learning Spanish and
+        passing Spain’s citizenship exam, and an offline reader for classic game walkthroughs.
+        These are the four I’m building right now.
+      </p>
+      <p class="contact-links">
+        <a href="https://www.reddit.com/user/mettavestor/" rel="me">u/mettavestor on Reddit</a>
+        <a href="#about-title">About me</a>
+      </p>
+
+      <nav class="index" aria-label="Projects">
+        <a href="#dominex">
+          <img src="assets/icons/dominex.png" alt="" width="40" height="40" />
+          <span><strong>Dominex</strong> Hex strategy game</span>
+        </a>
+        <a href="#ccse-english">
+          <img src="assets/icons/ccse-english.png" alt="" width="40" height="40" />
+          <span><strong>CCSE English</strong> Spain citizenship exam</span>
+        </a>
+        <a href="#retro-game-guides">
+          <img src="assets/icons/retro-game-guides.png" alt="" width="40" height="40" />
+          <span><strong>Retro Game Guides</strong> Offline walkthroughs</span>
+        </a>
+        <a href="#spanish-verb-master">
+          <img src="assets/icons/spanish-verb-master.png" alt="" width="40" height="40" />
+          <span><strong>Spanish Verb Master</strong> Conjugation practice</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="projects">
+      <article class="project wrap" id="dominex" style="--accent: var(--dominex); --tint: var(--dominex-tint)">
+        <div class="copy">
+          <header class="project-head">
+            <img class="app-icon" src="assets/icons/dominex.png" alt="Dominex icon" width="64" height="64" loading="lazy" />
+            <div>
+              <h2>Dominex</h2>
+              <p class="meta">Strategy game · Web &amp; iOS</p>
+            </div>
+          </header>
+          <p class="tagline">Grow your kingdom. Break theirs at the&nbsp;seams.</p>
+          <p>
+            Dominex is a single-player strategy game where every hex earns money and every soldier
+            costs it. Expand your kingdom, outsmart five AI rivals, and cut their territory apart to
+            bankrupt their armies, all while keeping your own economy alive. Inspired by the classic
+            <em>Slay</em>, it brings approachable rules and deep tactical choices to your browser,
+            iPhone, and iPad.
+          </p>
+          <p class="actions">
+            <a class="button primary" href="https://app.playdominex.com/">Play in your browser</a>
+            <a class="button" href="https://apps.apple.com/app/dominex/id6778509055">App Store</a>
+            <a class="site-link" href="https://playdominex.com/">playdominex.com</a>
+          </p>
+        </div>
+        <figure class="media wide">
+          <picture>
+            <source srcset="assets/shots/dominex-board-dark.webp" media="(prefers-color-scheme: dark)" />
+            <img
+              src="assets/shots/dominex-board.webp"
+              alt="A Dominex map: hex territories in six colors with villages, castles and soldiers"
+              width="1600"
+              height="1000"
+              loading="lazy"
+            />
+          </picture>
+        </figure>
+      </article>
+
+      <article class="project wrap" id="ccse-english" style="--accent: var(--ccse); --tint: var(--ccse-tint)">
+        <div class="copy">
+          <header class="project-head">
+            <img class="app-icon" src="assets/icons/ccse-english.png" alt="CCSE English icon" width="64" height="64" loading="lazy" />
+            <div>
+              <h2>CCSE English</h2>
+              <p class="meta">Exam prep · iPhone</p>
+            </div>
+          </header>
+          <p class="tagline">Understand the CCSE in English. Remember it in&nbsp;Spanish.</p>
+          <p>
+            CCSE English helps English speakers prepare for Spain’s citizenship knowledge exam
+            with clear English explanations, spaced repetition, and realistic Spanish mock exams.
+            It turns unfamiliar material into lasting knowledge, so learners walk into the exam
+            feeling prepared. I built it after preparing for the CCSE myself.
+          </p>
+          <p class="actions">
+            <a class="button primary" href="https://apps.apple.com/app/ccse-english/id6768684045">App Store</a>
+            <a class="site-link" href="https://ccseenglish.com/">ccseenglish.com</a>
+          </p>
+        </div>
+        <figure class="media phone">
+          <img
+            src="assets/shots/ccse-english-explanation.webp"
+            alt="CCSE English question 'España es…' with each answer shown in Spanish and English and an explanation"
+            width="660"
+            height="1434"
+            loading="lazy"
+          />
+        </figure>
+      </article>
+
+      <article class="project wrap" id="retro-game-guides" style="--accent: var(--retro); --tint: var(--retro-tint)">
+        <div class="copy">
+          <header class="project-head">
+            <img class="app-icon" src="assets/icons/retro-game-guides.png" alt="Retro Game Guides icon" width="64" height="64" loading="lazy" />
+            <div>
+              <h2>Retro Game Guides</h2>
+              <p class="meta">Walkthrough reader · iPhone</p>
+            </div>
+          </header>
+          <p class="tagline">Old-school game guides, beautifully readable on&nbsp;iPhone.</p>
+          <p>
+            Retro Game Guides turns classic game walkthroughs into a clean, searchable offline
+            library on your iPhone. Bring the guides you already trust or follow an included
+            original Standard Edition, with readable text, clickable contents, bookmarks, and saved
+            progress so you can pick up exactly where you left off. No ads, accounts, or
+            subscriptions.
+          </p>
+          <p class="actions">
+            <a class="button primary" href="https://apps.apple.com/app/id6771456010">App Store</a>
+            <a class="site-link" href="https://retrogameguides.net/">retrogameguides.net</a>
+          </p>
+        </div>
+        <figure class="media phone">
+          <img
+            src="assets/shots/retro-game-guides-reader.webp"
+            alt="Retro Game Guides reading a dungeon walkthrough, with a text-art floor map kept aligned"
+            width="620"
+            height="1348"
+            loading="lazy"
+          />
+        </figure>
+      </article>
+
+      <article class="project wrap" id="spanish-verb-master" style="--accent: var(--svm); --tint: var(--svm-tint)">
+        <div class="copy">
+          <header class="project-head">
+            <img class="app-icon" src="assets/icons/spanish-verb-master.png" alt="Spanish Verb Master icon" width="64" height="64" loading="lazy" />
+            <div>
+              <h2>Spanish Verb Master</h2>
+              <p class="meta">Language learning · Web</p>
+            </div>
+          </header>
+          <p class="tagline">Stop freezing on Spanish&nbsp;verbs.</p>
+          <p>
+            Spanish Verb Master combines spaced repetition with instant, letter-by-letter feedback,
+            using your hesitations and corrections to find what needs more practice. Short, focused
+            sessions build accuracy, confidence, and lasting recall.
+          </p>
+          <p class="actions">
+            <a class="button primary" href="https://www.spanishverbmaster.com/">Start practicing</a>
+            <a class="site-link" href="https://www.spanishverbmaster.com/">spanishverbmaster.com</a>
+          </p>
+        </div>
+        <figure class="media card">
+          <img
+            src="assets/shots/spanish-verb-master-practice.webp"
+            alt="A Spanish Verb Master prompt asking for the present tense of estar for ella"
+            width="960"
+            height="1016"
+            loading="lazy"
+          />
+        </figure>
+      </article>
+    </main>
+
+    <section class="about wrap" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <div>
+        <p>
+          I co-founded <a href="https://www.lullabot.com/">Lullabot</a> and led it as CEO. In
+          2018 I was voted one of the top 50 CEOs in the US, and in 2021 I sold the company to
+          its employees through an ESOP.
+        </p>
+        <p>
+          Along the way I co-wrote <cite>Pro Drupal Development</cite> and later wrote
+          <a href="https://www.amazon.com/dp/B0C6W5M32X"><cite>Go Prompt Yourself!</cite></a>,
+          a guide to metaprompting ChatGPT.
+        </p>
+        <p>
+          Now I live in Spain with my family, and I’m still a programmer at heart. These are the
+          things I’m building now, and each one brings me joy.
+        </p>
+        <p>
+          If you found me through Reddit, welcome. Bug reports, feature ideas, and honest
+          feedback are always appreciated. Message me at
+          <a href="https://www.reddit.com/user/mettavestor/" rel="me">u/mettavestor</a>, or use
+          the contact form on any of the app sites:
+          <a href="https://playdominex.com/support#contact">Dominex</a>,
+          <a href="https://ccseenglish.com/contact">CCSE English</a>,
+          <a href="https://retrogameguides.net/support/#contact">Retro Game Guides</a>, or
+          <a href="https://www.spanishverbmaster.com/feedback">Spanish Verb Master</a>.
+        </p>
+      </div>
+    </section>
+
+    <footer class="wrap">
+      <p>© 2026 Matt Westgate</p>
+    </footer>
+  </body>
+</html>

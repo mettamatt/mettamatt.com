@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Page not found · Matt Westgate</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script>
+      // Old app pages lived here before each project got its own site.
+      (function () {
+        var path = location.pathname.replace(/\.html$/, "");
+        var moves = [
+          [/^\/ccse\/guides\/?$/, "https://ccseenglish.com/guides/"],
+          [/^\/ccse\/guides\/([\w-]+)$/, "https://ccseenglish.com/guides/$1"],
+          [/^\/ccse\/privacy-policy$/, "https://ccseenglish.com/privacy-policy"],
+          [/^\/ccse(\/.*)?$/, "https://ccseenglish.com/"],
+          [/^\/retro\/privacy-policy$/, "https://retrogameguides.net/privacy-policy"],
+          [/^\/retro(\/.*)?$/, "https://retrogameguides.net/"],
+          [/^\/dominex\/privacy$/, "https://playdominex.com/privacy"],
+          [/^\/dominex(\/.*)?$/, "https://playdominex.com/"],
+        ];
+        for (var i = 0; i < moves.length; i++) {
+          if (moves[i][0].test(path)) {
+            location.replace(path.replace(moves[i][0], moves[i][1]));
+            return;
+          }
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="intro wrap">
+      <p class="kicker">404</p>
+      <h1>Page not found</h1>
+      <p class="lede">This page doesn’t exist anymore. My projects are all on the <a href="/">homepage</a>.</p>
+    </header>
+  </body>
+</html>
